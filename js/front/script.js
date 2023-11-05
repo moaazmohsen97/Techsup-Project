@@ -669,6 +669,38 @@ function BackgroundLazyLoader({selector, loadedClassName} = defaultOptions) {
 	let observer = new IntersectionObserver(callback);
 	nodes.forEach(node => observer.observe(node.node));
 };
-
 BackgroundLazyLoader();
 
+// gifoverlay
+// document.addEventListener("DOMContentLoaded", function () {
+// 	var btn = document.querySelectorAll(".btnsvg");
+// 	var imageContainer = document.querySelectorAll(".imageContainer");
+
+// 	btn.addEventListener("click", function (event) {
+// 		event.preventDefault(); 
+// 		console.log(event.preventDefault())
+// 		imageContainer.style.display = "block";
+// 		setTimeout(function () {
+// 			imageContainer.style.display = "none";
+// 		}, 3000);
+// 	});
+// });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var buttons = document.querySelectorAll(".btnsvg");
+
+    buttons.forEach(function (button) {
+        button.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var imageContainer = button.nextElementSibling; // Get the next element, which is the image container
+            imageContainer.style.display = "block";
+
+            setTimeout(function () {
+                imageContainer.style.display = "none";
+            }, 2000);
+        });
+    });
+});

@@ -2370,9 +2370,15 @@ h3.blog-section-subtitle::before {
     height: 100%;
     
 }
-.givimg
-{
-    margin: -35px -80px;
+@keyframes scaleAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+  
+  /* Apply the animation to an element */
+.givimg {
+    animation: scaleAnimation 1.5s infinite;
 }
 
 .title-color{

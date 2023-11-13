@@ -1,3 +1,6 @@
+body{
+    direction: rtl !important;
+}
 .rtl img.flag-lang {
     margin-left: 3px;
     margin-right: 0;
@@ -36,7 +39,7 @@
 .rtl .about-section .col-md-5 {
     text-align: right;
 }
-.rtl .portfolio-section {
+.rtl .portfolio-section,.rtl .blog-section ,.rtl .e-calculators, .rtl .partners-section, .rtl .advantages {
     text-align: right;
 }
 .rtl .project-popup {

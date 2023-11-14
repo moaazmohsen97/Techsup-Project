@@ -4577,6 +4577,10 @@ height: 125px;
 .page-content a {
     color: var(--primary-color);
 }
+.rtl .form-check-input,
+.rtl input[type="checkbox"]{
+    margin-right: 0.5rem;
+}
 
 /* COOKIE */
 .js-cookie-consent {

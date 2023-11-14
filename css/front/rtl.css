@@ -124,3 +124,8 @@ body{
 .rtl .page-content {
     text-align: right;
 }
+.rtl .form-check-input,
+.rtl input[type="checkbox"]{
+    margin-right: inherit;
+    margin-left: 0.5rem;
+}

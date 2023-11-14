@@ -1157,7 +1157,7 @@ div#project_list.active {
 
 
 .card-edit{
-    margin: 3rem 0;
+    margin: 2rem 0;
     /* background: #dfdfdf; */
     padding:40px 30px;
     /* min-height: 380px; */
@@ -1165,7 +1165,9 @@ div#project_list.active {
     /* align-items: center; */
     justify-content: center;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    border: none !important;
+    /* box-shadow: 0 0 10px rgb(0 0 0 / 10%); */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .form .form-group {
     margin-bottom: 0 !important;
@@ -1178,6 +1180,38 @@ div#project_list.active {
     margin: 20px 0 !important;
 }
 
+.user-Information .form-check-inline{
+    margin-right: 0.5rem
+}
+
+.cust-btn{
+    margin: 5px 0;
+}
+.cust-radio{
+    margin: 10px 0;
+}
+
+.card-edit .checkbox{
+    margin: 5px 0;
+}
+.card-edit .checkbox span{
+    padding: 0 2px;
+}
+.tamm-trans .form-control ,.muqeem-est-form .form-control ,.employee-form .form-control {
+    margin:10px 0 ;
+    height: 40px;
+}
+.qualifi .form-check-inline, 
+.sex .form-check-inline ,
+.specialization span ,
+.region span
+{
+    margin-bottom: 1rem 
+}
+
+.region span{
+    padding: 0 2px;
+}
 .btn-raised{
     display: block;
     white-space: nowrap;
@@ -1195,7 +1229,7 @@ div#project_list.active {
     margin: 15px 0px;
     transition: all 400ms ease;
     -webkit-transition: all 400ms ease;
-    margin-right: 30px;
+    /* margin-right: 30px; */
 }
 .btn-raised:hover{
     background-color: var(--pure-white);
@@ -1222,11 +1256,26 @@ div#project_list.active {
 }
 
 
+
+.employer-form span{
+    padding:5px;
+}
+/* .employer-form .input-group{
+    margin:10px 0 ;
+    height: 40px;
+
+} */
+
 @media (max-width: 768px){
 
     .form .form-control {
         margin:10px 0 ;
        
+    }
+
+
+    .cust-radio{
+        margin: 10px 16px;
     }
 }
 /* FIXED SIDEBAR */
@@ -4511,8 +4560,8 @@ height: 125px;
     margin-top: 10px;
 }
 .page-content {
-    padding: 90px 0 70px;
-    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 80px 0 70px;
+    /* border-top: 1px solid rgba(0,0,0,.1); */
 }
 .page-content p {
     font-size: 16px;
@@ -5549,8 +5598,8 @@ input[type="checkbox"]:checked::after{
     transform: rotate(-45deg);
 }
 input[type="checkbox"]:checked::before{
-    background-color: #18ba60;
-    border-color: #18ba60;
+    background-color: var(--primary-color);
+    border-color:  var(--primary-color);
 }
 
 

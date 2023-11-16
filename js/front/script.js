@@ -103,7 +103,7 @@
 
 		$(window).on("load", function () {
 			$('body:not(.rtl) .slider-techsup').owlCarousel({
-				loop: false,
+				loop: true,
 				rewind: true,
 				margin: 10,
 				lazyLoad: true,
@@ -132,7 +132,7 @@
 		/* HOME SLIDE */
 		$(window).on("load", function () {
 			$('body.rtl .slider-techsup').owlCarousel({
-				loop: false,
+				loop: true,
 				rewind: true,
 				rtl: true,
 				margin: 10,
@@ -223,6 +223,7 @@
 			smartSpeed: 500,
 			autoplayTimeout: 6000,
 			margin: 10,
+			rtl: false,
 			nav: false,
 			arrows: false,
 			autoplay: true,
@@ -365,78 +366,6 @@
 			}
 		});
 
-		// /* TESTIMONIAL */
-		// $('body:not(.rtl) .testimonial-section-slider').owlCarousel({
-		// 	loop:true,
-		// 	autoplay:false,
-		//     smartSpeed: 500,
-		//     autoplayTimeout:4000,
-		//     margin: 100,
-		//     nav: false,
-		//     arrows: false,
-		//     dots: false,
-		//     responsiveClass:true,
-		//     responsive:{
-		//         0:{
-		//             items:1
-		//         },
-		//         600:{
-		//             items:2
-		//         },
-		//         1000:{
-		//             items:3
-		//         }
-		//     }
-		// });
-
-		// $('.rtl .testimonial-section-slider').owlCarousel({
-		// 	rtl:true,
-		// 	loop:true,
-		// 	autoplay:true,
-		//     smartSpeed: 500,
-		//     autoplayTimeout:4000,
-		//     margin: 100,
-		//     nav: false,
-		//     arrows: false,
-		//     dots: false,
-		//     responsiveClass:true,
-		//     responsive:{
-		//         0:{
-		//             items:1
-		//         },
-		//         600:{
-		//             items:2
-		//         },
-		//         1000:{
-		//             items:3
-		//         }
-		//     }
-		// });
-
-		// /* CLIENTS */
-		// $('body:not(.rtl) .clients-slider').owlCarousel({
-		// 	loop:true,
-		// 	lazyLoad: true,
-		// 	autoplay:true,
-		//     smartSpeed: 500,
-		//     autoplayTimeout:4000,
-		//     margin: 15,
-		//     nav: false,
-		//     arrows: false,
-		//     dots: false,
-		//     responsiveClass:true,
-		//     responsive:{
-		//         0:{
-		//             items:1
-		//         },
-		//         600:{
-		//             items:3
-		//         },
-		//         1000:{
-		//             items:4
-		//         }
-		//     }
-		// });
 
 
 		$('.rtl .clients-slider').owlCarousel({
@@ -557,11 +486,7 @@
 			maximumSelectionLength: 2
 		});
 
-		$('#form-muqeem').select2({
-			placeholder: 'Select an option',
-			allowClear: true,
-
-		});
+		
 
 		$('#search').on('keyup', function () {
 			var query = $(this).val();
@@ -760,7 +685,9 @@
 
 }(this);
 
-
+function scrollToSection() {
+	document.getElementById('techsupApps').scrollIntoView({ behavior: 'smooth' });
+  }
 
 function BackgroundNode({ node, loadedClassName }) {
 	let src = node.getAttribute('data-background-image-url');
@@ -914,7 +841,5 @@ $(document).ready(function () {
 function markStepAsCompleted(index) {
 	$('.step-wrapper li').eq(index).removeClass('active').addClass('completed');
 }
-
-
 
 

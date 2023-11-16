@@ -1,6 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600&display=swap');
+
 body{
+    font-family: 'Cairo', sans-serif;
     direction: rtl !important;
 }
+
+.rtl .btn-slider {
+    margin-left:30px !important;
+}
+
 .rtl img.flag-lang {
     margin-left: 3px;
     margin-right: 0;
@@ -128,4 +137,8 @@ body{
 .rtl input[type="checkbox"]{
     margin-right: inherit;
     margin-left: 0.5rem;
+}
+
+.post-details{
+    text-align: right;
 }

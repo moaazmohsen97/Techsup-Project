@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
@@ -45,32 +45,31 @@
     <link rel="icon" href="public/images/media/logo.png" type="image/x-icon" />
 
     <!-- Fonts -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com/" />
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;display=swap" rel="stylesheet" />
     <!-- Styles -->
     <link href="css/front/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <link href="css/libs/fontawesome.min.css" type="text/css" rel="stylesheet" />
+
     <link href="css/front/owl.carousel.min.css" type="text/css" rel="stylesheet" />
     <link href="css/libs/aos.css" type="text/css" rel="stylesheet" />
     <link href="css/front/magnific.min.css" type="text/css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link href="css/front/style.css" type="text/css" rel="stylesheet" />
-    
-    <!-- <link href="css/front/rtl.css" type="text/css" rel="stylesheet"> -->
+    <link href="css/front/rtl.css" type="text/css" rel="stylesheet">
+<!--  -->
 
-
-    <!-- Inline Styles -->
-    <style>
-        body {
-            font-family: "Inter", sans-serif;
-        }
-    </style>
 </head>
 
-<body class="common-front"> <!--/////////// For RTL set class (rtl) in body /////////////-->
-
-      <header class="header">
+<body class="common-front rtl"> <!--/////////// For RTL set class (rtl) in body /////////////-->
+     <header class="header">
         <div class="header__content">
             <div class="logo">
                 <a href="index.html" title="techsup CMS Theme">
@@ -171,7 +170,6 @@
             </button>
         </div>
      </header>
-
        <main>
     <!-- first sec -->
     <div class="slider-techsup-section">
@@ -194,8 +192,12 @@
                                         for companies and establishments and outsource services to others.
                                     </p>
                                 </div>
-                                <a href="contact.html" target="_self" class="btn btn-slider"><span>Contact us</span></a>
-                                <a href="" target="_self" class="btn btn-slider2"><span>Strat now</span></a>
+                                <a onclick="scrollToSection()" class="btn btn-slider">
+                                    Start now
+                                </a>
+                                <a href="contact.html" target="_self" class="btn btn-slider btn-contact">
+                                    Contact us
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -226,8 +228,12 @@
                                         for companies and establishments and outsource services to others.
                                     </p>
                                 </div>
-                                <a href="contact.html" target="_self" class="btn btn-slider"><span>Contact us</span></a>
-                                <a href="" target="_self" class="btn btn-slider2"><span>Strat now</span></a>
+                                <a onclick="scrollToSection()" class="btn btn-slider">
+                                    Start now
+                                </a>
+                                <a href="contact.html" target="_self" class="btn btn-slider btn-contact">
+                                    Contact us
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -303,7 +309,7 @@
         </div>
     </div>
     <!-- Techsup Verticals -->
-    <div class="services-section">
+    <div  id="techsupApps" class="services-section">
         <div class="container">
             <h3 class="blog-section-subtitle mb-4">Techsup Verticals</h3>
             <h3>Techsup <span>Verticals</span></h3>
@@ -322,7 +328,7 @@
 
                             <h4 class="heading">Products and Services</h4>
                         </div>
-                        <a href="partner-details.html target="_self" class="btn btn-slider2"><span>Strat now</span></a>
+                        <a target="_self" class="btn btn-slider2 startButton"><span>Start now</span></a>
                     </div>
                 </div>
                 <div class="card-parent">
@@ -339,7 +345,7 @@
 
                             <h4 class="heading">Products and Services</h4>
                         </div>
-                        <a href="partner-details.html target="_self" class="btn btn-slider2"><span>Strat now</span></a>
+                        <a href="partner-details.html" target="_self" class="btn btn-slider2"><span>Start now</span></a>
 
                     </div>
                 </div>
@@ -359,7 +365,7 @@
                         </div>
 
 
-                        <a  target="_self" class="btn btn-slider2" href="partner-details.html" ><span>Strat now</span></a>
+                        <a  target="_self" class="btn btn-slider2" href="partner-details.html" ><span>Start now</span></a>
                     </div>
                 </div>
                 <div class="card-parent">
@@ -377,7 +383,7 @@
                             <h4 class="heading">Service Provider</h4>
                         </div>
 
-                        <a href="partner-details.html" target="_self" class="btn btn-slider2"><span>Strat now</span></a>
+                        <a href="partner-details.html" target="_self" class="btn btn-slider2"><span>Start now</span></a>
                     </div>
                 </div>
                 <div class="card-parent">
@@ -395,7 +401,7 @@
                             <h4 class="heading">Products and Services</h4>
                         </div>
 
-                        <a href="partner-details.html" target="_self" class="btn btn-slider2"><span>Strat now</span></a>
+                        <a href="partner-details.html" target="_self" class="btn btn-slider2"><span>Start now</span></a>
                     </div>
                 </div>
             </div>
@@ -434,13 +440,13 @@
                            <span class="text-danger"></span>
                          </div> -->
 
-                                        <select required="" aria-required="true" class="form-control select2"
+                                        <select required="" aria-required="true" class=" form-control select2"
                                             name="muqeem_type">
                                             <option value="">Muqeem Service</option>
                                             <option value="complete">Shamel (Comprehensive)</option>
                                             <option value="operation">Transaction Base</option>
                                         </select>
-                                        <span class="material-input"></span><span class="material-input"></span>
+                                   
                                     </div>
                                 </div>
 
@@ -783,7 +789,7 @@
 
 
                                     <div class="col-md-12">
-                                        <input type="range" value="0">
+                                        <input type="range" class="cus-range" value="0">
                                         <div id="h4-container">
                                             <div id="h4-subcontainer">
                                                 <h4 class="number">0<span></span></h4>
@@ -925,8 +931,8 @@
     </div>
     <div class="blog-section">
         <div class="container">
-            <h3 class="blog-section-subtitle mb-4">E-forms</h3>
-            <h3 class="e-forms">E-<span class="title-color">forms</span></h3>
+            <h3 class="blog-section-subtitle mb-4">E-Forms</h3>
+            <h3 class="e-forms">E-<span class="title-color">Forms</span></h3>
             <div class="row">
                 <div class="col-md-4">
                     <article class="blog-single-post">
@@ -1046,11 +1052,8 @@
             </div>
         </div>
     </div>
- 
-
-
   <!-- partners -->
-  <div class="partners-section" data-aos="fade-up"
+    <div  class="partners-section" data-aos="fade-up"
   data-aos-duration="3000">
     <div class="container">
 
@@ -1093,7 +1096,7 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
   <!-- tammm Upload modal -->
     <div class="modal fade" id="tmmUpload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -1149,7 +1152,6 @@
         </div>
       </div>
        </main>
-
     <footer class="footer-section">
         <div class="footer-wrapper">
             <div class="row align-items-end">
@@ -1294,8 +1296,11 @@
     <script src="js/front/tilt.jquery.min.js" defer></script>
     <script src="js/front/magnific.min.js" defer></script>
     <script src="js/libs/aos.js" defer></script>
-    <script src="js/front/script.js" defer></script>
 
+       <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/front/script.js" defer></script>
+ 
+   
 </body>
 
 </html>

@@ -1640,10 +1640,9 @@ a.btn.btn-slider {
     margin-left: 30px;
 }
 a.btn.btn-slider:hover {
-    background-color: var(--primary-color);
-    opacity:0.8;
-    color: var(--pure-white);
-    
+    background-color: #222227 !important;
+    color: var(--pure-white) !important;
+    border-color: #222227 !important;
 }
 
 .btn-partner{
@@ -1661,7 +1660,7 @@ a.btn.btn-slider2 {
     display: block;
     white-space: nowrap;
     color: var(--pure-white);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     background-color: var(--secondary-color);
     border-radius: 12px;
@@ -1678,7 +1677,15 @@ a.btn.btn-slider2 {
 }
 a.btn.btn-slider2:hover {
     background-color: var(--primary-color);
-   
+}
+
+.btn-contact{
+    background: transparent !important;
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+.btn-contact:hover {
+    background-color: var(--primary-color);
 }
 /* III. ABOUT  */
 
@@ -2542,7 +2549,7 @@ h3.blog-section-subtitle::before {
  overflow: hidden;
 }
 .p-edit{
-    padding: 0 14px !important;
+    /* padding: 0 14px !important; */
     margin-top: 1rem !important;
     margin-right: 0 !important;
 }
@@ -2627,6 +2634,9 @@ input[type="range"] {
     max-width: 100%;
     margin: 24px 0 16px;
     transition: box-shadow 0.2s ease-in-out;
+  }
+  .cus-range{
+    direction: ltr;
   }
   
   /* Chrome */
@@ -3202,9 +3212,8 @@ a.btn.btn-style2 {
     -webkit-box-shadow: 0 0 10px #000; */
 }
 a.btn.btn-style2:hover {
-    background-color:var(--primary-color);
-    opacity:0.6;
-    color:var(--pure-white);
+    background-color:var(--pure-white);
+    color:var(--primary-color);
 }
 
 
@@ -4485,7 +4494,7 @@ height: 125px;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
   
 }
-.iframe-contact .form-control ,.e-calculators .form-control ,.e-calculators select {
+.iframe-contact .form-control ,.e-calculators .form-control   {
     display: block;
     width: 100%;
     padding: 0 20px;
@@ -5280,18 +5289,19 @@ a{
 
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 body{
-	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Roboto', sans-serif; */
     overflow-x: hidden;
 }
 * {
 	margin: 0;
 	padding: 0;
 }
-i {
+/* i {
 	margin-right: 10px;
-}
+} */
 
 /*------------------------*/
 input:focus,
@@ -5728,3 +5738,17 @@ input[type="checkbox"]:checked::before{
   .select2-container--default .select2-selection--single .select2-selection__arrow {
     top: 5px !important;
   }
+
+  .e-calculators .select2{
+    height: 50px !important; 
+    border-radius: 12px ;
+  }
+  .e-calculators .select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 35px;
+  }
+  .e-calculators .select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: 12px !important;
+  }
+
+
+

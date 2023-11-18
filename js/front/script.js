@@ -63,16 +63,16 @@
 			$('.dropdown-menu').removeClass('show');
 		});
 		//   rang
-		$(function () {
-			var rangePercent = $('[type="range"]').val();
-			$('[type="range"]').on('change input', function () {
-				rangePercent = $('[type="range"]').val();
-				$('.number').html(rangePercent + '<span></span>');
-				$('[type="range"], h4>span').css('filter', 'hue-rotate(-' + rangePercent + 'deg)');
-				// $('h4').css({'transform': 'translateX(calc(-50% - 20px)) scale(' + (1+(rangePercent/100)) + ')', 'left': rangePercent+'%'});
-				$('.number').css({ 'transform': 'translateX(-50%) scale(' + (1 + (rangePercent / 100)) + ')', 'left': rangePercent + '%' });
-			});
-		});
+		// $(function () {
+		// 	var rangePercent = $('[type="range"]').val();
+		// 	$('[type="range"]').on('change input', function () {
+		// 		rangePercent = $('[type="range"]').val();
+		// 		$('.number').html(rangePercent + '<span></span>');
+		// 		$('[type="range"], h4>span').css('filter', 'hue-rotate(-' + rangePercent + 'deg)');
+		// 		// $('h4').css({'transform': 'translateX(calc(-50% - 20px)) scale(' + (1+(rangePercent/100)) + ')', 'left': rangePercent+'%'});
+		// 		$('.number').css({ 'transform': 'translateX(-50%) scale(' + (1 + (rangePercent / 100)) + ')', 'left': rangePercent + '%' });
+		// 	});
+		// });
 		// progress
 		$(".next").click(function () {
 			if ($(".step-wrapper li:last-child").hasClass('completed')) {
@@ -751,7 +751,6 @@ function BackgroundLazyLoader({ selector, loadedClassName } = defaultOptions) {
 BackgroundLazyLoader();
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
 	var buttons = document.querySelectorAll(".btnsvg");
 
@@ -808,9 +807,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // }
 
 
-
-
-
 $(document).ready(function () {
 	//Initialize tooltips
 	$('.nav-tabs > li a[title]').tooltip();
@@ -843,3 +839,34 @@ function markStepAsCompleted(index) {
 }
 
 
+//  start dropzone//////////////////////////////
+
+document.addEventListener("DOMContentLoaded", function() {
+    const dropzone = new Dropzone('.dropzone', {
+      url: '/upload',
+      dictDefaultMessage: 'Drop files here or click to upload.',
+      previewTemplate: document.querySelector('#my-template').innerHTML,
+    });
+  });
+
+
+  //  end dropzone//////////////////////////////
+
+
+
+
+  (function() {
+	'use strict';
+	window.addEventListener('load', function() {
+	  var forms = document.getElementsByClassName('needs-validation');
+	  var validation = Array.prototype.filter.call(forms, function(form) {
+		form.addEventListener('submit', function(event) {
+		  if (form.checkValidity() === false) {
+			event.preventDefault();
+			event.stopPropagation();
+		  }
+		  form.classList.add('was-validated');
+		}, false);
+	  });
+	}, false);
+  })();

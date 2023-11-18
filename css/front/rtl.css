@@ -142,3 +142,41 @@ body{
 .post-details{
     text-align: right;
 }
+
+.cus-range{
+    direction: rtl;
+  }
+
+
+/* contact */
+  .contant-section-page .icon {
+    margin-left: 20px;
+}
+.content .title ,.content p  {
+    text-align: right;
+}
+ .get-connected li {
+    display: flex;
+    direction: rtl; 
+  }
+  .get-connected li span  {
+    order: 1;
+  }
+  .get-connected li a  {
+    order: 2;
+    text-align: left; 
+  }
+  .invalid-feedback {
+    text-align:right !important;
+  }
+
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input[type="range"]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 40px;
+      -webkit-appearance: none;
+      color: #ddd;
+      background: linear-gradient(to left,#ddd , #ddd) !important; 
+      transition: box-shadow 0.2s ease-in-out;
+    }

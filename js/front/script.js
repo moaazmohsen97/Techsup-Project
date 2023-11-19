@@ -93,9 +93,9 @@
 		});
 
 		// Simulate loading with a delay (you can replace this with your actual loading logic)
-		setTimeout(() => {
-			togglePreloaderLoaded();
-		}, 3000);
+		// setTimeout(() => {
+		// 	togglePreloaderLoaded();
+		// }, 3000);
 
 		/*==============================
 		   start slider
@@ -134,7 +134,7 @@
 			$('body.rtl .slider-techsup').owlCarousel({
 				loop: true,
 				rewind: true,
-				rtl: true,
+				rtl: false,
 				margin: 10,
 				lazyLoad: true,
 				responsiveClass: true,
@@ -160,33 +160,34 @@
 		});
 
 		$(window).on("load", function () {
-			$('body.rtl .service-boxes-slider').owlCarousel({
-				loop: false,
-				rewind: true,
-				rtl: true,
-				margin: 10,
-				lazyLoad: true,
-				responsiveClass: true,
-				smartSpeed: 500,
-				autoplayTimeout: 8000,
-				dots: false,
-				navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
-				responsive: {
-					0: {
-						items: 1,
-						nav: true
-					},
-					600: {
-						items: 1,
-						nav: true
-					},
-					1000: {
-						items: 1,
-						nav: true,
-					}
-				}
-			});
-		});
+  $('body.rtl .service-boxes-slider').owlCarousel({
+    loop: true,
+    rewind: true,
+    rtl: true, // Change this to true to make the slider slide from right to left
+    margin: 10,
+    lazyLoad: true,
+    responsiveClass: true,
+    smartSpeed: 500,
+    autoplayTimeout: 8000,
+    dots: false,
+    navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      600: {
+        items: 1,
+        nav: true
+      },
+      1000: {
+        items: 1,
+        nav: true,
+      }
+    }
+  });
+});
+
 		$(window).on("load", function () {
 			$('body.rtl .partners-boxes-slider').owlCarousel({
 				loop: false,
@@ -514,86 +515,86 @@
 		});
 
 
-		$(function () {
-			$('label').magnificPopup({
-				type: 'inline',
-				items: { src: '#modal' },
-				preloader: false,
-				modal: true
-			});
-			$(document).on('click', '.popup-modal-dismiss', function (e) {
-				e.preventDefault();
-				$.magnificPopup.close();
-			});
-		});
+		// $(function () {
+		// 	$('label').magnificPopup({
+		// 		type: 'inline',
+		// 		items: { src: '#modal' },
+		// 		preloader: false,
+		// 		modal: true
+		// 	});
+		// 	$(document).on('click', '.popup-modal-dismiss', function (e) {
+		// 		e.preventDefault();
+		// 		$.magnificPopup.close();
+		// 	});
+		// });
 
-		if (jQuery('.gallery').length) {
-			jQuery('.gallery').magnificPopup({
-				delegate: 'a',
-				type: 'image',
-				gallery: {
-					enabled: true
-				},
-				// other options
-			});
-		}
-		if (jQuery('.gallery').length) {
-			jQuery('.gallery').magnificPopup({
-				delegate: 'a',
-				type: 'image',
-				gallery: {
-					enabled: true
-				},
-				// other options
-			});
-		}
+		// if (jQuery('.gallery').length) {
+		// 	jQuery('.gallery').magnificPopup({
+		// 		delegate: 'a',
+		// 		type: 'image',
+		// 		gallery: {
+		// 			enabled: true
+		// 		},
+		// 		// other options
+		// 	});
+		// }
+		// if (jQuery('.gallery').length) {
+		// 	jQuery('.gallery').magnificPopup({
+		// 		delegate: 'a',
+		// 		type: 'image',
+		// 		gallery: {
+		// 			enabled: true
+		// 		},
+		// 		// other options
+		// 	});
+		// }
 
-		if (jQuery('.popup-vimeo-video').length) {
-			$(".popup-vimeo-video").magnificPopup({
-				type: "iframe",
-				removalDelay: 160,
-				preloader: false,
-				fixedContentPos: false
-			});
-		}
+		// if (jQuery('.popup-vimeo-video').length) {
+		// 	$(".popup-vimeo-video").magnificPopup({
+		// 		type: "iframe",
+		// 		removalDelay: 160,
+		// 		preloader: false,
+		// 		fixedContentPos: false
+		// 	});
+		// }
 
-		if (jQuery('.portfolio-section-filters').length) {
-			const filters = document.querySelectorAll('.filter');
+		// if (jQuery('.portfolio-section-filters').length) {
+		// 	const filters = document.querySelectorAll('.filter');
 
-			filters.forEach(filter => {
+		// 	filters.forEach(filter => {
 
-				filter.addEventListener('click', function () {
+		// 		filter.addEventListener('click', function () {
 
-					var liElements = document.querySelectorAll(".portfolio-section-filters .filter.active");
-					if (liElements.length > 0) {
-						liElements[0].classList.remove("active");
-					}
+		// 			var liElements = document.querySelectorAll(".portfolio-section-filters .filter.active");
+		// 			if (liElements.length > 0) {
+		// 				liElements[0].classList.remove("active");
+		// 			}
 
-					filter.classList.add("active");
+		// 			filter.classList.add("active");
 
-					let selectedFilter = filter.getAttribute('data-filter');
+		// 			let selectedFilter = filter.getAttribute('data-filter');
 
-					let itemsToHide = document.querySelectorAll(`.projects .project:not([data-filter='${selectedFilter}'])`);
-					let itemsToShow = document.querySelectorAll(`.projects [data-filter='${selectedFilter}']`);
+		// 			let itemsToHide = document.querySelectorAll(`.projects .project:not([data-filter='${selectedFilter}'])`);
+		// 			let itemsToShow = document.querySelectorAll(`.projects [data-filter='${selectedFilter}']`);
 
-					if (selectedFilter == 'all') {
-						itemsToHide = [];
-						itemsToShow = document.querySelectorAll('.projects [data-filter]');
-					}
+		// 			if (selectedFilter == 'all') {
+		// 				itemsToHide = [];
+		// 				itemsToShow = document.querySelectorAll('.projects [data-filter]');
+		// 			}
 
-					itemsToHide.forEach(el => {
-						el.classList.add('hide');
-						el.classList.remove('show');
-					});
+		// 			itemsToHide.forEach(el => {
+		// 				el.classList.add('hide');
+		// 				el.classList.remove('show');
+		// 			});
 
-					itemsToShow.forEach(el => {
-						el.classList.remove('hide');
-						el.classList.add('show');
-					});
+		// 			itemsToShow.forEach(el => {
+		// 				el.classList.remove('hide');
+		// 				el.classList.add('show');
+		// 			});
 
-				});
-			});
-		}
+		// 		});
+		// 	});
+		// }
 
 		jQuery(window).on("scroll", function () {
 			(jQuery(window).scrollTop() > 250 && jQuery(window).width() > 1200 && (
@@ -611,6 +612,14 @@
 	})
 }(jQuery))
 
+
+
+
+var loadFile = function (event) {
+	var image = document.getElementById("output");
+	image.src = URL.createObjectURL(event.target.files[0]);
+  };
+  
 
 !function (window) {
 	var $q = function (q, res) {
@@ -688,7 +697,6 @@
 function scrollToSection() {
 	document.getElementById('techsupApps').scrollIntoView({ behavior: 'smooth' });
   }
-
 function BackgroundNode({ node, loadedClassName }) {
 	let src = node.getAttribute('data-background-image-url');
 	let show = (onComplete) => {
@@ -710,12 +718,10 @@ function BackgroundNode({ node, loadedClassName }) {
 		}
 	}
 }
-
 let defaultOptions = {
 	selector: '[data-background-image-url]',
 	loadedClassName: 'loaded'
 }
-
 function BackgroundLazyLoader({ selector, loadedClassName } = defaultOptions) {
 	let nodes = [].slice.apply(document.querySelectorAll(selector))
 		.map(node => new BackgroundNode({ node, loadedClassName }));
@@ -749,8 +755,6 @@ function BackgroundLazyLoader({ selector, loadedClassName } = defaultOptions) {
 	nodes.forEach(node => observer.observe(node.node));
 };
 BackgroundLazyLoader();
-
-
 document.addEventListener("DOMContentLoaded", function () {
 	var buttons = document.querySelectorAll(".btnsvg");
 
@@ -767,9 +771,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 });
-
-
-
 // $(document).ready(function () {
 //     //Initialize tooltips
 //     $('.nav-tabs > li a[title]').tooltip();
@@ -805,8 +806,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // function prevTab(elem) {
 //     $(elem).prev().find('a[data-toggle="tab"]').click();
 // }
-
-
 $(document).ready(function () {
 	//Initialize tooltips
 	$('.nav-tabs > li a[title]').tooltip();
@@ -832,29 +831,10 @@ $(document).ready(function () {
 		}
 	});
 });
-
 // Helper function to mark a step as completed
 function markStepAsCompleted(index) {
 	$('.step-wrapper li').eq(index).removeClass('active').addClass('completed');
 }
-
-
-//  start dropzone//////////////////////////////
-
-document.addEventListener("DOMContentLoaded", function() {
-    const dropzone = new Dropzone('.dropzone', {
-      url: '/upload',
-      dictDefaultMessage: 'Drop files here or click to upload.',
-      previewTemplate: document.querySelector('#my-template').innerHTML,
-    });
-  });
-
-
-  //  end dropzone//////////////////////////////
-
-
-
-
   (function() {
 	'use strict';
 	window.addEventListener('load', function() {
@@ -870,3 +850,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	  });
 	}, false);
   })();
+
+
+

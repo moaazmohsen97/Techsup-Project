@@ -12,6 +12,7 @@
      --oof-white:#F1EFEF;
      --ovelay :rgba(0, 0, 0, 0.7);
      --primary-color-btn:#02567b;
+     --red:red
  }
  
  /* .rtl a.btn.btn-slider {
@@ -19,7 +20,7 @@
     margin-left: 30px;
 } */
 
-
+/* /////////////////////btns///////////////////////////////////// */
 a.btn.btn-slider {
     display: block;
     white-space: nowrap;
@@ -89,12 +90,6 @@ a.btn.btn-slider2:hover {
     background-color: var(--primary-color);
 }
 
-
-
-
-
-
-
 .btn-raised{
     display: block;
     white-space: nowrap;
@@ -119,8 +114,7 @@ a.btn.btn-slider2:hover {
     color: var(--primary-color) !important;
 }
 
-
-.modal-footer .btn-style1 {
+/* .modal-footer .btn-style1 {
     display: block;
     white-space: nowrap;
     color:var(--pure-white);
@@ -136,9 +130,9 @@ a.btn.btn-slider2:hover {
     margin: 15px 0px;
     transition: all 400ms ease;
     
-}
+} */
 
-.btn.btn-style1 {
+.btn.btn-style1 , .btn-model1 , .btn-model2 {
     display: block;
     white-space: nowrap;
     color:var(--pure-white);
@@ -153,17 +147,30 @@ a.btn.btn-slider2:hover {
     line-height: 50px;
     margin: 15px 0px;
     transition: all 400ms ease;
-    /* -webkit-transition: all 400ms ease;
-    box-shadow: 0 0 10px #000;
-    -webkit-box-shadow: 0 0 10px #000; */
     margin-right: 30px;
+}
+.btn-model1 , .btn-model2 {
+    border:none;
+    margin-right: 10px;
+
+}
+.btn-model1:hover{
+    background-color: var(--primary-color);
+    opacity:0.7
+}
+
+.btn-model2 {
+    background:var(--red);
+}
+.btn-model2:hover{
+    background-color: var(--red);
+    opacity:0.7
 }
 
 .rtl .btn.btn-style1 {
     margin-right: 0px;
     margin-left: 30px;
 }
-
 .btn.btn-style1:hover {
     /* color: var(--primary-color);
     border-color:1px solid var(--primary-color);
@@ -175,7 +182,6 @@ a.btn.btn-slider2:hover {
     font-weight: 600;
 }
 
-
 .btn-slider-edit{
     padding:0 15px !important;
     font-size: 16px !important;
@@ -183,13 +189,6 @@ a.btn.btn-slider2:hover {
   .btn-request{    background: var(--pure-white) !important;
     color: var(--primary-color) !important;
     }
-
-
-
-
-
-
-
 
     
 a.btn.btn-style2 {
@@ -346,3 +345,4 @@ h3.blog-section-subtitle::before {
   .title-wrapper .heading2 span {
     color: var(--primary-color);
    }
+  /* ////////////////btn ///////////////////*/

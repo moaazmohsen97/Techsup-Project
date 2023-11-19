@@ -851,5 +851,22 @@ function markStepAsCompleted(index) {
 	}, false);
   })();
 
+$("#addOtherUser").on("click", function () {
+	$(".added-card").clone().removeClass("added-card").appendTo(".user-card-wrapper");
+});
+
+$(document).on("click", ".delete-user", function () {
+	$(this).closest(".card").remove();
+});
+
+$("#addOtherRequire").on("click", function () {
+	$(".added-card-require").clone().removeClass("added-card-require").appendTo(".require-card-wrapper");
+});
+
+$(document).on("click", ".delete-require", function () {
+	$(this).closest(".card").remove();
+});
+
+
 
 

@@ -549,14 +549,14 @@
 		// 	});
 		// }
 
-		// if (jQuery('.popup-vimeo-video').length) {
-		// 	$(".popup-vimeo-video").magnificPopup({
-		// 		type: "iframe",
-		// 		removalDelay: 160,
-		// 		preloader: false,
-		// 		fixedContentPos: false
-		// 	});
-		// }
+		if (jQuery('.popup-vimeo-video').length) {
+			$(".popup-vimeo-video").magnificPopup({
+				type: "iframe",
+				removalDelay: 160,
+				preloader: false,
+				fixedContentPos: false
+			});
+		}
 
 		// if (jQuery('.portfolio-section-filters').length) {
 		// 	const filters = document.querySelectorAll('.filter');

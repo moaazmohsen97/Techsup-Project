@@ -194,19 +194,17 @@
             </div>
             <div class="col-md-12">
               <form class="form">
-
                 <div class="card card-edit">
+                  <h5 class="main-title-form">Company Info</h5>
                   <div class="row">
                     <div class="col-md-6">
-                      <div class="form-group   ">
+                      <div class="form-group">
                         <input type="number" name="tamm_org_no" class="form-control" placeholder="Company MOI Number" />
-
                       </div>
-
                     </div>
                     <div class="col-md-6">
                       <div>
-                        <div class="form-group   ">
+                        <div class="form-group">
                           <input type="text" name="tamm_org_name" class="form-control"
                             placeholder="Company Full Arabic Name" /><span class="material-input"></span><span
                             class="material-input"></span>
@@ -215,90 +213,89 @@
                       </div>
                     </div>
                   </div>
-
-
                 </div>
-                <div class="card card-edit">
-                  <div class="row">
-                    <!-- Required Action -->
-                    <div class="col-md-3">
-                      <div>
-                        <h5 class="main-title-form">Service Type</h5>
-                      </div>
-                      <div class="d-flex margin-edit">
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="option1" />
-                          <label class="form-check-label" for="inlineRadio1">add</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2" />
-                          <label class="form-check-label" for="inlineRadio2">Edit</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2" />
-                          <label class="form-check-label" for="inlineRadio2">Delete</label>
-                        </div>
-                      </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="main-title-form m-0">Users</h5>
+                  <a class="btn btn-success btn-raised my-0" id="addOtherUser">Add User
+                  </a>
+                </div>
+                <div class="user-card-wrapper">
+                  <div class="card card-edit mt-3 position-relative added-card">
+                    <div class="delete-item delete-user btn btn-outline-danger position-absolute">
+                      <i class="fas fa-trash-alt"></i>
                     </div>
-
-                    <!-- Other users information -->
-                    <div class="col-md-9">
-                      <h5 class="main-title-form">Service Type</h5>
-
-                      <div class="row">
-                        <div class="col-md-3">
-                          <div class="">
-                            <div class="form-group is-empty">
-                              <input type="text" name="mainuser[0][tamm_mainuser_username]" class="form-control"
-                                placeholder="User name" /><span class="material-input"></span><span
-                                class="material-input"></span>
-                            </div>
-                          </div>
+                    <div class="row">
+                      <!-- Required Action -->
+                      <div class="col-12">
+                        <div>
+                          <h6 class="main-title-form m-0">Service Type</h6>
                         </div>
-                        <div class="col-md-3">
-                          <div class="">
-                            <div class="form-group is-empty">
-                              <input type="text" name="mainuser[0][tamm_mainuser_id]" class="form-control"
-                                placeholder="ID No." /><span class="material-input"></span><span
-                                class="material-input"></span>
-                            </div>
+                        <div class="d-flex mt-3 gap-3">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="serviceType" id="service1"
+                              value="option1" />
+                            <label class="form-check-label" for="service1">add</label>
                           </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="">
-                            <div class="form-group is-empty">
-                              <input type="text" name="mainuser[0][tamm_mainuser_mobile]" class="form-control"
-                                placeholder="Mobile" /><span class="material-input"></span><span
-                                class="material-input"></span>
-                            </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="serviceType" id="service2"
+                              value="option2" />
+                            <label class="form-check-label" for="service2">Edit</label>
                           </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="">
-                            <div class="form-group is-empty">
-                              <input type="text" class="form-control" placeholder="Email" /><span
-                                class="material-input"></span><span class="material-input"></span>
-                            </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="serviceType" id="service3"
+                              value="option2" />
+                            <label class="form-check-label" for="service3">Delete</label>
                           </div>
-                        </div>
-                        <div class="col-md-1 form-group is-empty">
-                          <input type="button" value="Delete" class="btn btn-danger  btn-sm" />
                         </div>
                       </div>
-                    </div>
-                    <!-- add another btn -->
-                    <div class="col-md-12">
-                      <a class="btn btn-success btn-raised" id="addbutton_main">Add another user
-                      </a>
+                      <!-- Other users information -->
+                      <div class="col-12 mt-4">
+                        <h6 class="main-title-form m-0">User Info</h6>
+                        <div class="row mt-3">
+                          <div class="col-md-3">
+                            <div class="">
+                              <div class="form-group is-empty">
+                                <input type="text" name="mainuser[0][tamm_mainuser_username]" class="form-control"
+                                  placeholder="User name" /><span class="material-input"></span><span
+                                  class="material-input"></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="">
+                              <div class="form-group is-empty">
+                                <input type="text" name="mainuser[0][tamm_mainuser_id]" class="form-control"
+                                  placeholder="ID No." /><span class="material-input"></span><span
+                                  class="material-input"></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="">
+                              <div class="form-group is-empty">
+                                <input type="text" name="mainuser[0][tamm_mainuser_mobile]" class="form-control"
+                                  placeholder="Mobile" /><span class="material-input"></span><span
+                                  class="material-input"></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="">
+                              <div class="form-group is-empty">
+                                <input type="text" class="form-control" placeholder="Email" /><span
+                                  class="material-input"></span><span class="material-input"></span>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="card card-edit">
-                  <div class="row">
-
+                  <h6 class="main-title-form m-0">More Info</h6>
+                  <div class="row mt-3">
                     <div class="col-md-6">
                       <div class="">
                         <div class="form-group   ">
@@ -321,7 +318,7 @@
 
                   </div>
                 </div>
-                <div class="col-md-12 d-flex justify-content-end">
+                <div class="d-flex justify-content-end">
                   <input type="submit" value="Send" class="btn-raised" />
                 </div>
               </form>

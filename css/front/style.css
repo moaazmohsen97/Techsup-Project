@@ -433,7 +433,7 @@ div#project_list.active {
     padding: 25px 25px 0;
     transform: translate3d(281px, 0, 0);
     transition: transform 0.5s ease;
-    border-left: 1px solid #222227;
+    /* border-left: 1px solid #222227; */
     /* box-shadow: 0 7px 8px 0 rgb(0 0 0 / 6%); */
 }
 

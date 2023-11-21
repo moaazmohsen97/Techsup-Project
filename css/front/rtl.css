@@ -182,3 +182,35 @@ body{
       background: linear-gradient(to left,#ddd , #ddd) !important; 
       transition: box-shadow 0.2s ease-in-out;
     }
+
+@media(min-width: 576px){
+
+    
+    .header__menu {
+   
+      right:unset;
+        left: 0;
+        transform: translate3d(-281px, 0, 0);
+      
+    }
+
+    .header__menu--active {
+        transform: translate3d(0, 0, 0);
+    }
+    .header__actions {
+    /* margin-left: auto; */
+        margin-left: 42px;
+    }
+
+    .header__btn span {
+        right:unset;
+        left: 0;
+    
+    }
+
+.header__btn {
+    right:unset !important;
+    left: 30px !important;
+}
+
+}

@@ -183,7 +183,17 @@ body{
       transition: box-shadow 0.2s ease-in-out;
     }
 
-@media(min-width: 576px){
+
+    /* @media(max-width:1024px){
+
+       .header__btn {
+         display:none
+        }
+    
+    } */
+
+
+@media(max-width:767px){
 
     
     .header__menu {
@@ -194,6 +204,9 @@ body{
       
     }
 
+    .header__nav {
+        align-items: end;
+    }
     .header__menu--active {
         transform: translate3d(0, 0, 0);
     }
@@ -208,9 +221,9 @@ body{
     
     }
 
-.header__btn {
+   .header__btn {
     right:unset !important;
     left: 30px !important;
-}
+    }
 
 }

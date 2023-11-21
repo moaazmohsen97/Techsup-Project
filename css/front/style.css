@@ -4457,7 +4457,8 @@ blockquote .small:before {
     text-align: center;
     position: relative;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-    /* border: 1px solid #222227; */
+    height: 520px;
+
 }
 
 .venor-price-box h3 {

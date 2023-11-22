@@ -134,7 +134,7 @@
 			$('body.rtl .slider-techsup').owlCarousel({
 				loop: true,
 				rewind: true,
-				rtl: false,
+				rtl: true,
 				margin: 10,
 				lazyLoad: true,
 				responsiveClass: true,

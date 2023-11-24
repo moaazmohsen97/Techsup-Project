@@ -5316,6 +5316,11 @@ span.cookie-consent__message a:hover {
         margin: 0;
     }
 
+
+    .partners-pra {
+        padding: 0 25px;
+        
+    }
     .header__action.header__action--signin {
         display: none;
     }

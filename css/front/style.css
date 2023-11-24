@@ -5360,8 +5360,18 @@ span.cookie-consent__message a:hover {
     .slider-techsup-section,
     .breadcrumb-area {
         background-size: contain;
+        text-align:center;
     }
 
+    a.btn.btn-slider {
+     
+        margin-right: 30px;
+    }
+
+    .slider-body p {
+        text-align: justify;
+        direction: rtl;
+    }
     .ct-topbar-layout1 .ct-topbar-meta {
         display: block;
         text-align: center;

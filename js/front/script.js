@@ -159,34 +159,34 @@
 			});
 		});
 
-		$(window).on("load", function () {
-  $('body.rtl .service-boxes-slider').owlCarousel({
-    loop: true,
-    rewind: true,
-    rtl: true, // Change this to true to make the slider slide from right to left
-    margin: 10,
-    lazyLoad: true,
-    responsiveClass: true,
-    smartSpeed: 500,
-    autoplayTimeout: 8000,
-    dots: false,
-    navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
-    responsive: {
-      0: {
-        items: 1,
-        nav: true
-      },
-      600: {
-        items: 1,
-        nav: true
-      },
-      1000: {
-        items: 1,
-        nav: true,
-      }
-    }
-  });
-});
+// 		$(window).on("load", function () {
+//   $('body.rtl .service-boxes-slider').owlCarousel({
+//     loop: true,
+//     rewind: true,
+//     rtl: true, // Change this to true to make the slider slide from right to left
+//     margin: 10,
+//     lazyLoad: true,
+//     responsiveClass: true,
+//     smartSpeed: 500,
+//     autoplayTimeout: 8000,
+//     dots: false,
+//     navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
+//     responsive: {
+//       0: {
+//         items: 1,
+//         nav: true
+//       },
+//       600: {
+//         items: 1,
+//         nav: true
+//       },
+//       1000: {
+//         items: 1,
+//         nav: true,
+//       }
+//     }
+//   });
+// });
 
 		$(window).on("load", function () {
 			$('body.rtl .partners-boxes-slider').owlCarousel({
@@ -218,13 +218,67 @@
 		});
 
 		/* SERVICES BOXES */
+		// $('body:not(.rtl) .service-boxes-slider').owlCarousel({
+		// 	autoplay: false,
+		// 	loop: true,
+		// 	smartSpeed: 500,
+		// 	autoplayTimeout: 6000,
+		// 	margin: 10,
+		// 	rtl: false,
+		// 	nav: false,
+		// 	arrows: false,
+		// 	autoplay: true,
+		// 	autoplayTimeout: 4000,
+		// 	dots: true,
+		// 	responsiveClass: true,
+		// 	responsive: {
+		// 		0: {
+		// 			items: 1
+		// 		},
+		// 		600: {
+		// 			items: 2
+		// 		},
+		// 		1000: {
+		// 			items: 3
+		// 		}
+		// 	}
+		// });
+
+		// $('.rtl .service-boxes-slider').owlCarousel({
+		// 	rtl: true,
+		// 	loop: false,
+		// 	autoplay: true,
+		// 	smartSpeed: 500,
+		// 	autoplayTimeout: 6000,
+		// 	margin: 10,
+		// 	nav: false,
+		// 	arrows: false,
+		// 	dots: true,
+		// 	responsiveClass: true,
+		// 	responsive: {
+		// 		0: {
+		// 			items: 1
+		// 		},
+		// 		600: {
+		// 			items: 2
+		// 		},
+		// 		1000: {
+		// 			items: 3
+		// 		}
+		// 	}
+		// });
+
+
+
+
+
+		
 		$('body:not(.rtl) .service-boxes-slider').owlCarousel({
-			autoplay: false,
-			loop: false,
+			autoplay: true,
+			loop: true,
 			smartSpeed: 500,
 			autoplayTimeout: 6000,
 			margin: 10,
-			rtl: false,
 			nav: false,
 			arrows: false,
 			autoplay: true,
@@ -246,56 +300,7 @@
 
 		$('.rtl .service-boxes-slider').owlCarousel({
 			rtl: true,
-			loop: false,
-			autoplay: true,
-			smartSpeed: 500,
-			autoplayTimeout: 6000,
-			margin: 10,
-			nav: false,
-			arrows: false,
-			dots: true,
-			responsiveClass: true,
-			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: 2
-				},
-				1000: {
-					items: 3
-				}
-			}
-		});
-
-		$('body:not(.rtl) .service-boxes-slider').owlCarousel({
-			autoplay: false,
-			loop: false,
-			smartSpeed: 500,
-			autoplayTimeout: 6000,
-			margin: 10,
-			nav: false,
-			arrows: false,
-			autoplay: true,
-			autoplayTimeout: 4000,
-			dots: true,
-			responsiveClass: true,
-			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: 2
-				},
-				1000: {
-					items: 3
-				}
-			}
-		});
-
-		$('.rtl .service-boxes-slider').owlCarousel({
-			rtl: true,
-			loop: false,
+			loop: true,
 			autoplay: true,
 			smartSpeed: 500,
 			autoplayTimeout: 6000,

@@ -109,8 +109,8 @@
 				lazyLoad: true,
 				responsiveClass: true,
 				smartSpeed: 500,
-				autoplay: true,
-				autoplayTimeout: 8000,
+				// autoplay: true,
+				// autoplayTimeout: 8000,
 				dots: false,
 				navText: ["<div class=\"paralax-arrow slick-prev\"><div class=\"slick-arrow paralax-elem\"><i class='fas fa-angle-double-left'></i></div></div>", "<div class=\"paralax-arrow slick-next\"><div class=\"slick-arrow paralax-elem\"><i class='fas fa-angle-double-right'></i></div></div>"],
 				responsive: {
@@ -139,7 +139,7 @@
 				lazyLoad: true,
 				responsiveClass: true,
 				smartSpeed: 500,
-				autoplayTimeout: 8000,
+				// autoplayTimeout: 8000,
 				dots: false,
 				navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 				responsive: {

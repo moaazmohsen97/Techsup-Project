@@ -268,6 +268,11 @@
 		// 	}
 		// });
 
+
+
+
+
+		
 		$('body:not(.rtl) .service-boxes-slider').owlCarousel({
 			autoplay: true,
 			loop: true,
@@ -297,7 +302,6 @@
 		$('.rtl .service-boxes-slider').owlCarousel({
 			rtl: true,
 			loop: true,
-			rewind: true,
 			autoplay: true,
 			smartSpeed: 500,
 			autoplayTimeout: 6000,

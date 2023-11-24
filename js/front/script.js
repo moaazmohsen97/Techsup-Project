@@ -287,7 +287,7 @@
 			dots: true,
 			responsiveClass: true,
 			lazyLoad: true,
-			dots: false,
+		
 			// navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 			responsive: {
 				0: {

@@ -2656,7 +2656,7 @@ span.testimonial_slider_title {
     top: 0px;
     right: 98px;
 }
-
+/* 
 #myRange {
     width: 100%;
     height: 200px;
@@ -2664,18 +2664,18 @@ span.testimonial_slider_title {
 }
 
 /* Customize the track (the gray bar) */
-#myRange::-webkit-slider-runnable-track {
+/* #myRange::-webkit-slider-runnable-track {
     width: 100%;
     height: 4px;
   
-}
+} */
 
 /* Customize the thumb (the handle) */
-#myRange::-webkit-slider-thumb {
+/* #myRange::-webkit-slider-thumb {
     width: 20px;
     height: 20px;
     cursor: pointer;
-}
+} */
 
 input[type="range"] {
     outline: 0;
@@ -2688,7 +2688,7 @@ input[type="range"] {
 }
 
 /* Chrome */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
+/* @media screen and (-webkit-min-device-pixel-ratio: 0) {
     input[type="range"] {
         overflow: hidden;
         height: 40px;
@@ -2716,7 +2716,7 @@ input[type="range"] {
     }
 
  
-}
+} */ 
 
 
 .e-calculators form h3 {

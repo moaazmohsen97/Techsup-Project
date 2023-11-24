@@ -282,7 +282,6 @@ input[type="range"] {
         -webkit-appearance: none;
         background-color: #ddd;
     }
-
     input[type="range"]::-webkit-slider-runnable-track {
         height: 40px;
         -webkit-appearance: none;

@@ -276,6 +276,7 @@
 		$('body:not(.rtl) .service-boxes-slider').owlCarousel({
 			autoplay: true,
 			loop: true,
+			rewind: true,
 			smartSpeed: 500,
 			autoplayTimeout: 6000,
 			margin: 10,
@@ -285,6 +286,9 @@
 			autoplayTimeout: 4000,
 			dots: true,
 			responsiveClass: true,
+    lazyLoad: true,
+		  dots: false,
+	 navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 			responsive: {
 				0: {
 					items: 1
@@ -301,6 +305,7 @@
 		$('.rtl .service-boxes-slider').owlCarousel({
 			rtl: true,
 			loop: true,
+			rewind: true,
 			autoplay: true,
 			smartSpeed: 500,
 			autoplayTimeout: 6000,

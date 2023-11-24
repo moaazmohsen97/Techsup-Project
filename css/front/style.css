@@ -5364,7 +5364,7 @@ span.cookie-consent__message a:hover {
     }
 
     a.btn.btn-slider {
-        margin-right: 30px;
+        margin-right: 30px !important;
     }
 
     .slider-body p {

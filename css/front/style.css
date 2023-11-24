@@ -7003,3 +7003,13 @@ h3.blog-section-subtitle::before {
 .card-edit.added-card .delete-user,.card-edit.added-card-require .delete-require {
     display: none;
 }
+
+
+
+
+@media (max-width:767px) {
+
+    a.btn.btn-slider {
+        margin-left: 30px !important;
+    }
+}

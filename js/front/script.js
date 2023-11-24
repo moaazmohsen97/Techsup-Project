@@ -29,7 +29,7 @@
 
 		$(document).ready(function () {
 			$('.select2').select2();
-		});
+		  });
 
 		// setTimeout(function () {
 		// 	$('body').addClass('loaded');
@@ -159,34 +159,34 @@
 			});
 		});
 
-		// 		$(window).on("load", function () {
-		//   $('body.rtl .service-boxes-slider').owlCarousel({
-		//     loop: true,
-		//     rewind: true,
-		//     rtl: true, // Change this to true to make the slider slide from right to left
-		//     margin: 10,
-		//     lazyLoad: true,
-		//     responsiveClass: true,
-		//     smartSpeed: 500,
-		//     autoplayTimeout: 8000,
-		//     dots: false,
-		//     navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
-		//     responsive: {
-		//       0: {
-		//         items: 1,
-		//         nav: true
-		//       },
-		//       600: {
-		//         items: 1,
-		//         nav: true
-		//       },
-		//       1000: {
-		//         items: 1,
-		//         nav: true,
-		//       }
-		//     }
-		//   });
-		// });
+// 		$(window).on("load", function () {
+//   $('body.rtl .service-boxes-slider').owlCarousel({
+//     loop: true,
+//     rewind: true,
+//     rtl: true, // Change this to true to make the slider slide from right to left
+//     margin: 10,
+//     lazyLoad: true,
+//     responsiveClass: true,
+//     smartSpeed: 500,
+//     autoplayTimeout: 8000,
+//     dots: false,
+//     navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
+//     responsive: {
+//       0: {
+//         items: 1,
+//         nav: true
+//       },
+//       600: {
+//         items: 1,
+//         nav: true
+//       },
+//       1000: {
+//         items: 1,
+//         nav: true,
+//       }
+//     }
+//   });
+// });
 
 		$(window).on("load", function () {
 			$('body.rtl .partners-boxes-slider').owlCarousel({
@@ -268,11 +268,6 @@
 		// 	}
 		// });
 
-
-
-
-
-
 		$('body:not(.rtl) .service-boxes-slider').owlCarousel({
 			autoplay: true,
 			loop: true,
@@ -286,9 +281,6 @@
 			autoplayTimeout: 4000,
 			dots: true,
 			responsiveClass: true,
-			lazyLoad: true,
-		
-			// navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 			responsive: {
 				0: {
 					items: 1
@@ -304,21 +296,16 @@
 
 		$('.rtl .service-boxes-slider').owlCarousel({
 			rtl: true,
-			autoplay: true,
 			loop: true,
 			rewind: true,
+			autoplay: true,
 			smartSpeed: 500,
 			autoplayTimeout: 6000,
 			margin: 10,
 			nav: false,
 			arrows: false,
-			autoplay: true,
-			autoplayTimeout: 4000,
 			dots: true,
 			responsiveClass: true,
-			lazyLoad: true,
-			dots: false,
-			// navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 			responsive: {
 				0: {
 					items: 1
@@ -502,7 +489,7 @@
 			maximumSelectionLength: 2
 		});
 
-
+		
 
 		$('#search').on('keyup', function () {
 			var query = $(this).val();
@@ -633,8 +620,8 @@
 var loadFile = function (event) {
 	var image = document.getElementById("output");
 	image.src = URL.createObjectURL(event.target.files[0]);
-};
-
+  };
+  
 
 !function (window) {
 	var $q = function (q, res) {
@@ -711,7 +698,7 @@ var loadFile = function (event) {
 
 function scrollToSection() {
 	document.getElementById('techsupApps').scrollIntoView({ behavior: 'smooth' });
-}
+  }
 function BackgroundNode({ node, loadedClassName }) {
 	let src = node.getAttribute('data-background-image-url');
 	let show = (onComplete) => {
@@ -850,21 +837,21 @@ $(document).ready(function () {
 function markStepAsCompleted(index) {
 	$('.step-wrapper li').eq(index).removeClass('active').addClass('completed');
 }
-(function () {
+  (function() {
 	'use strict';
-	window.addEventListener('load', function () {
-		var forms = document.getElementsByClassName('needs-validation');
-		var validation = Array.prototype.filter.call(forms, function (form) {
-			form.addEventListener('submit', function (event) {
-				if (form.checkValidity() === false) {
-					event.preventDefault();
-					event.stopPropagation();
-				}
-				form.classList.add('was-validated');
-			}, false);
-		});
+	window.addEventListener('load', function() {
+	  var forms = document.getElementsByClassName('needs-validation');
+	  var validation = Array.prototype.filter.call(forms, function(form) {
+		form.addEventListener('submit', function(event) {
+		  if (form.checkValidity() === false) {
+			event.preventDefault();
+			event.stopPropagation();
+		  }
+		  form.classList.add('was-validated');
+		}, false);
+	  });
 	}, false);
-})();
+  })();
 
 $("#addOtherUser").on("click", function () {
 	$(".added-card").clone().removeClass("added-card").appendTo(".user-card-wrapper");

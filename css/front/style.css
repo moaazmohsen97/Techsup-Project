@@ -7017,3 +7017,8 @@ h3.blog-section-subtitle::before {
         margin-left: 30px !important;
     }
 }
+
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block !important;
+}

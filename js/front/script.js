@@ -287,20 +287,17 @@
 			dots: true,
 			responsiveClass: true,
 			lazyLoad: true,
-			// dots: false,
+			dots: false,
 			navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 			responsive: {
 				0: {
-					items: 1,
-					dots: true 
+					items: 1
 				},
 				600: {
-					items: 2,
-					dots: true 
+					items: 2
 				},
 				1000: {
-					items: 3,
-					dots: true 
+					items: 3
 				}
 			}
 		});
@@ -324,16 +321,13 @@
 			navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 			responsive: {
 				0: {
-					items: 1,
-					dots: true // Show dots for screens between 600px and 999px
+					items: 1
 				},
 				600: {
-					items: 2,
-					dots: true // Show dots for screens between 600px and 999px
+					items: 2
 				},
 				1000: {
-					items: 3,
-					dots: true 
+					items: 3
 				}
 			}
 		});

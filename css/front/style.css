@@ -7019,6 +7019,6 @@ h3.blog-section-subtitle::before {
 }
 
 
-.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+/* .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
     display: block !important;
-}
+} */

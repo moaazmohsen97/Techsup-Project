@@ -314,7 +314,7 @@
 			arrows: false,
 			autoplay: true,
 			autoplayTimeout: 4000,
-			// dots: true,
+			dots: true,
 			responsiveClass: true,
 			lazyLoad: true,
 			dots: false,

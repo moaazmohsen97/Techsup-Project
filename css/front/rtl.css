@@ -6,9 +6,9 @@ body{
     direction: rtl !important;
 }
 
-.rtl .btn-slider {
+/* .rtl .btn-slider {
     margin-left:30px !important;
-}
+} */
 
 .rtl img.flag-lang {
     margin-left: 3px;

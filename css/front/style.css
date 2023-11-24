@@ -2660,7 +2660,7 @@ span.testimonial_slider_title {
 #myRange {
     width: 100%;
     height: 200px;
-    /* background: var(--black); */
+  
     outline: none;
 }
 
@@ -2668,14 +2668,13 @@ span.testimonial_slider_title {
 #myRange::-webkit-slider-runnable-track {
     width: 100%;
     height: 4px;
-    /* background: var(--th-color); */
+  
 }
 
 /* Customize the thumb (the handle) */
 #myRange::-webkit-slider-thumb {
     width: 20px;
     height: 20px;
-    /* background: var(--th-color); */
     cursor: pointer;
 }
 
@@ -2718,10 +2717,7 @@ input[type="range"] {
         position: relative;
     }
 
-    input[type="range"]:active::-webkit-slider-thumb {
-        /* background: #fff; */
-        /* box-shadow: -340px 0 0 320px #1597ff, inset 0 0 0 3px #1597ff; */
-    }
+ 
 }
 
 
@@ -7022,3 +7018,6 @@ h3.blog-section-subtitle::before {
 /* .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
     display: block !important;
 } */
+ #telework_range{
+    direction: rtl;
+ }    

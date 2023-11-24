@@ -284,9 +284,10 @@
 			arrows: false,
 			autoplay: true,
 			autoplayTimeout: 4000,
-			dots: true,
+			// dots: true,
 			responsiveClass: true,
 			lazyLoad: true,
+			dots: false,
 			navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 			responsive: {
 				0: {
@@ -313,9 +314,10 @@
 			arrows: false,
 			autoplay: true,
 			autoplayTimeout: 4000,
-			dots: true,
+			// dots: true,
 			responsiveClass: true,
 			lazyLoad: true,
+			dots: false,
 			navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 			responsive: {
 				0: {

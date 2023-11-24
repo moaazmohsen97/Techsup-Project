@@ -288,7 +288,7 @@
 			responsiveClass: true,
 			lazyLoad: true,
 			dots: false,
-			navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
+			// navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 			responsive: {
 				0: {
 					items: 1
@@ -318,7 +318,7 @@
 			responsiveClass: true,
 			lazyLoad: true,
 			dots: false,
-			navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
+			// navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 			responsive: {
 				0: {
 					items: 1

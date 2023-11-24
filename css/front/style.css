@@ -994,9 +994,9 @@ div#project_list.active {
         padding-left: 0px;
     }
 
-    .header__actions {
+    /* .header__actions {
         margin-right: 52px;
-    }
+    } */
 }
 
 @media (min-width: 1200px) {
@@ -1018,9 +1018,9 @@ div#project_list.active {
         padding: 0 90px;
     }
 
-    .header__actions {
+    /* .header__actions {
         margin-right: 0;
-    }
+    } */
 
     .header__action--search {
         display: none;

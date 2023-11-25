@@ -346,3 +346,30 @@ h3.blog-section-subtitle::before {
     color: var(--primary-color);
    }
   /* ////////////////btn ///////////////////*/
+
+
+/* Range Slider Styles */
+    .cus-range {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 25px;
+        outline: none;
+        border-radius: 20px;
+        margin: 10px 0;
+        background-color: #ddd;
+        background:  #ddd;
+    }
+
+    .cus-range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background:var(--primary-color);  
+        background-color: var(--primary-color);
+        cursor: pointer;
+        border: 2px solid var(--pure-white);
+        transition: background-color 0.15s ease-in-out;
+        
+    }

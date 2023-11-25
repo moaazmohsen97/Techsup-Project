@@ -58,10 +58,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link href="css/front/style.css" type="text/css" rel="stylesheet" />
     <link href="css/front/rtl.css" type="text/css" rel="stylesheet" />
+    <link href="css/front/btn.css" type="text/css" rel="stylesheet" />
   </head>
 <body class="common-front">
     <header class="header">
         <div class="header__content">
+
+            <div class="d-flex">
             <div class="logo">
                 <a href="index.html" title="techsup CMS Theme">
                     <img width="105" height="22" class="img-fluid logo-front" src="public/images/media/logo.png"
@@ -114,7 +117,8 @@
                             href="contact.html">Contact</a> </li> -->
                 </ul>
             </div>
-    
+            </div>
+         
             <div class="header__actions">
                 <div class="header__action header__action--search">
                     <button class="header__action-btn" type="button">
@@ -422,18 +426,14 @@
 
                     <div class="col-lg-4 col-md-12">
                         <form class="form-calc-edit">
-
-                            <div>
-                                <h3>Muqeem Calculator</h3>
-                                <input type="hidden" name="_token" value="HI2C3aeroB3QHgrhWgj6IKDjufazJShU1ZXOPlKZ" />
-                            </div>
-
                             <div class="row">
                                 <div class="col-md-12">
+                                    <h3>Muqeem Calculator</h3>
+                                </div>
+                                <div class="col-md-12"> 
                                     <div class="form-group is-empty">
                                         <input min="1" value="1" name="muqeem_number" type="number" class="form-control"
-                                            placeholder="No. of Residents" /><span class="material-input"></span><span
-                                            class="material-input"></span><span class="material-input"></span>
+                                            placeholder="No. of Residents" />
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -443,22 +443,13 @@
                                         <option value="complete">Shamel (Comprehensive)</option>
                                         <option value="operation">Transaction Base</option>
                                     </select>
-
                                 </div>
                             </div>
-
-                            <div data-sitekey="6Lc5grMoAAAAAAhoy4QWRQtgbb_Qoz34fAuUNsL0" class="g-recaptcha">
-                            </div>
                             <!-- spinner -->
-                            <div>
-
-                                <a class="btn btn-slider p-edit btnsvg btn-calc"><span>Calculate Now</span></a>
-
-                            </div>
                             <span id="spinner" class="loader d-none"></span>
                             <div id="result"></div>
 
-
+                            <a class="btn btn-slider p-edit btnsvg"><span>Calculate Now</span></a>
                             <div class="overlayForm imageContainer" style="display: none;">
                                 <img class="givimg w-100 h-100" src="./img/pic/e-calc/calc.svg" alt="Your Image">
                             </div>
@@ -467,64 +458,31 @@
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <form class="form-calc-edit">
-                            <h3>Tamm Calculator</h3>
-                            <input type="hidden" name="_token" />
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12"> 
+                                    <h3>Tamm Calculator</h3>
+                                </div>
+                                <div class="col-md-12">    
                                     <div class="form-group is-empty">
                                         <input min="1" value="1" name="muqeem_number" type="number" class="form-control"
-                                            placeholder="No. of Residents" /><span class="material-input"></span><span
-                                            class="material-input"></span><span class="material-input"></span>
+                                            placeholder="No. of Residents" />
+                                            
                                     </div>
                                 </div>
                             </div>
                             <!-- spinner -->
-                            <div>
-
-                                <a class="btn btn-slider p-edit btnsvg btn-calc"><span>Calculate Now</span></a>
-
-                            </div>
+                         
                             <span id="spinner" class="loader d-none"></span>
                             <div id="result"></div>
 
-
-
+                             <a class="btn btn-slider p-edit btnsvg">
+                                <span>Calculate Now</span></a>
                             <div class="overlayForm imageContainer" style="display: none;">
-                                <img class="givimg w-100 h-100" src="./img/pic/e-calc/calc.svg" alt="Your Image">
+                                <img class="givimg w-100 h-100" src="./img/pic/e-calc/calc.svg"
+                                    alt="Your Image">
                             </div>
                         </form>
-                        <!-- 
-
-                                <script>
-                                    document.getElementById('btn-calc').addEventListener('click', function () {
-                                        var spinner = document.getElementById('spinner');
-                                        spinner.classList.remove('d-none');
-                                        spinner.classList.add('d-block');
-                                        var url = "https://jsonplaceholder.typicode.com/users";
-                                        var xhr = new XMLHttpRequest();
-                                        xhr.open('GET', url, true);
-                                        xhr.onreadystatechange = function () {
-                                            if (xhr.readyState === XMLHttpRequest.DONE) {
-                                                if (xhr.status === 200) {
-                                                    var response = JSON.parse(xhr.responseText);
-                                                    var resultDiv = document.getElementById('result');
-                                                    resultDiv.textContent = JSON.stringify(response);
-                                                } else {
-                                                    console.error('Request failed. Status: ' + xhr.status);
-                                                }
-                                            }
-                                        };
-                                        xhr.onerror = function () {
-                                            console.error('Request failed');
-                                        };
-
-                                        xhr.send();
-                                    });
-
-
-
-                                </script> -->
-
+             
                         <script>
                             var buttons = document.getElementsByClassName('btn-calc');
 
@@ -866,7 +824,8 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <input type="range" class="cus-range" value="0">
+                                            <input type="range" min="0" max="100" value="0" class="cus-range" id="myRange">
+
                                             <!-- <div id="h4-container">
                                           <div id="h4-subcontainer">
                                               <h4 class="number">0<span></span></h4>

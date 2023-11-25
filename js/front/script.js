@@ -876,3 +876,32 @@ $(document).on("click", ".delete-require", function () {
 
 
 
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+	var buttons = document.querySelectorAll(".btnsvg");
+
+	buttons.forEach(function (button) {
+		button.addEventListener("click", function (event) {
+			event.preventDefault();
+
+			var imageContainer = button.nextElementSibling;
+			imageContainer.style.display = "block";
+
+			setTimeout(function () {
+				imageContainer.style.display = "none";
+			}, 2000);
+		});
+	});
+});
+
+
+
+var slider = document.getElementById("myRange");
+slider.oninput = function() {
+    var value = (slider.value - slider.min) / (slider.max - slider.min);
+    slider.style.background = 'linear-gradient(to right, #1597ff 0%, #1597ff ' + (value * 100) + '%, #ddd ' + (value * 100) + '%)';
+};

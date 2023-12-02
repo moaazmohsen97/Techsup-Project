@@ -9,7 +9,10 @@ body{
 /* .rtl .rtl .btn-slider{
     margin-left:30px !important;
 } */
-
+ .header__actions {
+        margin-right: auto !important;
+        margin-left: 42px !important;
+    }
 .rtl img.flag-lang {
     margin-left: 3px;
     margin-right: 0;
@@ -195,7 +198,6 @@ body{
 
 @media(max-width:1200px){
 
-    
     .header__menu {
    
       right:unset;
@@ -210,10 +212,8 @@ body{
     .header__menu--active {
         transform: translate3d(0, 0, 0);
     }
-    .header__actions {
-    /* margin-left: auto; */
-        margin-left: 42px;
-    }
+   
+   
 
     .header__btn span {
         right:unset;

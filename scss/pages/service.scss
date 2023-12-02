@@ -1,0 +1,141 @@
+
+/* services */
+.services-section {
+    background: var(--pure-white);
+    padding: 70px 0 90px;
+    /* border-bottom: 1px solid #222227; */
+}
+
+.description-services p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--th-color);
+    margin-bottom: 10px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+.services-section .owl-stage-outer {
+    cursor: grab;
+    cursor: -webkit-grab;
+}
+
+.service-box-parent {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.services-section h3 {
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: var(--black);
+    margin-top: 0;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-box {
+    padding: 60px 45px;
+    position: relative;
+    background-size: cover;
+}
+
+.service-box i {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.service-box h5 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #324452;
+}
+
+.service-box p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #696970;
+    margin-bottom: 0;
+}
+
+.service-box * {
+    position: relative;
+    z-index: 2;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+}
+
+.service-box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    z-index: 1;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+}
+
+.service-box::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(96, 34 ,234 , 70%);
+    z-index: 1;
+    opacity: 0;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+}
+
+.service-box:hover::after {
+    opacity: 1;
+}
+
+.service-box:hover::before {
+    opacity: 0;
+}
+
+.service-box:hover * {
+    color: var(--black);
+}
+
+.services-section .owl-dots button.owl-dot {
+    width: 10px;
+    height: 5px;
+    background: gray;
+    border-radius: 12px;
+    margin: 0 5px;
+    outline: 0;
+}
+
+.services-section .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services-section .owl-dots button.owl-dot.active {
+    background: var(--primary-color);
+    width: 20px;
+}
+
+.services-section h3 span {
+    color: var(--primary-color);
+}

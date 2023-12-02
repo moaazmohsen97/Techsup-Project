@@ -1,0 +1,89 @@
+
+
+/* ///////////start-modal//////////////////// */
+.modal-dialog-edit {
+    width: 50%;
+    max-width: 80rem;
+}
+
+/* start header modal */
+.modal-header {
+    align-items: baseline;
+    color: var(--primary-color);
+}
+
+.modal-header .close {
+    margin: -1rem 0 auto;
+}
+
+/* end header modal */
+
+/* start modal-body */
+.modal-body form .form-group .input-group {
+    display: inline-block;
+    border-radius: 5px
+}
+
+.modal-body form .form-group select {
+    border-radius: .5rem
+}
+
+.modal-body form .form-control {
+    border-radius: 10px;
+    height: 50px;
+}
+
+
+.profile-pic {
+    color: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.profile-pic input {
+    display: none;
+}
+
+.profile-pic .-label {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 3px dotted var(--primary-color);
+    color: var(--black);
+    font-size: 2em;
+    text-align: center;
+}
+
+.profile-pic:hover .-label {
+    color: var(--primary-color);
+    z-index: 10000;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+.profile-pic span {
+    display: inline-flex;
+    padding: 0.2em;
+    height: 5em;
+}
+
+
+
+
+.label-group {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.label-group .required {
+    color: var(--red);
+    margin: 5px 2px;
+}
+
+
+.was-validated .form-control:valid {
+    border-color: red;
+}

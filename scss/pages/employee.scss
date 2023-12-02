@@ -1,0 +1,26 @@
+
+.qualifi .form-check-inline,
+.sex .form-check-inline,
+.specialization span,
+.region span {
+    margin-bottom: 1rem
+} 
+
+ .region span {
+    padding: 0 2px;
+} 
+
+
+.card-edit {
+    margin: 2rem 0;
+    /* background: #dfdfdf; */
+    padding: 30px;
+    /* min-height: 380px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border-radius: 12px;
+    border: none !important;
+    /* box-shadow: 0 0 10px rgb(0 0 0 / 10%); */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

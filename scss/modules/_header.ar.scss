@@ -1,0 +1,35 @@
+// header section
+@media (max-width: 768px) { 
+     .header__action {
+      margin-left: 30px;
+  }
+
+  .rtl .header__action {
+      margin-left: 0;
+      margin-right: 30px;
+  }
+
+  .header__action--signin {
+      padding-left: 0px;
+  }
+.header__action.header__action--search {
+    margin-right: 10px;
+}
+
+.header7 .fixed-sidebar-menu {
+    right: -320pxe
+}
+}
+
+@media (max-width:1024px) and (min-width:767px) {
+
+  .rtl .header__action:first-child {
+      margin-right: 0;
+      margin-left: 20px;
+  }
+
+  .rtl .header__nav-menu {
+      left: 0;
+      right: inherit;
+  }
+}

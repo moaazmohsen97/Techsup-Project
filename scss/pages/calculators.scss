@@ -1,0 +1,121 @@
+.e-calculators .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 35px;
+    width: 40%;
+    margin: auto;
+}
+.e-calculators .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 12px !important;
+}
+.e-calculators form {
+    position: relative;
+    box-shadow: var(--box-shadow);
+    padding: 35px !important;
+    padding-top: 80px;
+    border-radius: 12px;
+    color: var(--th-color);
+    text-align: center;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
+    // padding: 20px;
+}
+.form-calc-edit {
+    height: 400px;
+    position: relative;
+}
+.e-calculators form .overlayForm {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.e-calculators form h3 {
+    color: var(--th-color);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 17px;
+}
+.iframe-contact .form-control,
+.e-calculators .form-control {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--black);
+    /* background-color: #222227; */
+    background-clip: padding-box;
+    /* border: 1px solid #222227; */
+    border-radius: 12px;
+    transition:
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+    height: 50px !important;
+}
+.e-calculators .form-control {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--black);
+    /* background-color: #222227; */
+    background-clip: padding-box;
+    /* border: 1px solid #222227; */
+    border-radius: 12px;
+    transition:
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+    height: 50px !important;
+}
+.result {
+    width: 50%;
+    margin: auto;
+    height: 50px;
+}
+.p-edit {
+    /* padding: 0 14px !important; */
+    margin-top: 1rem !important;
+    margin-right: 0 !important;
+}
+.givimg {
+    animation: scaleAnimation 1.5s infinite;
+}
+
+.overlayForm {
+    display: none;
+}
+.label-edit {
+    margin: 0.5rem 0;
+}
+// .form-calc-edit {
+//   
+//   }
+//   .form-footer {
+//     position: absolute;
+//     bottom: 16px;
+//     left: 0;
+//     right: 0;
+//     text-align: center;
+//   }
+  
+
+.form-calc-edit {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .form-content {
+    flex-grow: 1;
+  }
+  
+  .form-footer {
+    margin-top: auto;
+    text-align: center;
+  }
+  

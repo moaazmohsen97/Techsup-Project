@@ -60,10 +60,10 @@ body{
 .rtl blockquote.testimonial-slide {
     text-align: right;
 }
-.rtl .blog-section .blog_custom .post-categories {
+/* .rtl .blog-section .blog_custom .post-categories {
     left: auto;
     right: 15px;
-}
+} */
 .rtl .blog-section .blog_custom .post-details {
     text-align: right;
 }

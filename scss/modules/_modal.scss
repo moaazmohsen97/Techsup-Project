@@ -87,3 +87,130 @@
 .was-validated .form-control:valid {
     border-color: red;
 }
+
+
+ 
+    .modal{
+    .btn.btn-style1 ,
+     .btn-model1 , 
+     .btn-model2 {
+        display: block;
+        white-space: nowrap;
+        color:var(--pure-white);
+        font-size: 14px;
+        font-weight: 500;
+        background-color: var(--primary-color);
+        border-radius: 12px;
+        padding: 0 35px;
+        display: inline-block;
+        height: 50px;
+        min-width: 100px;
+        line-height: 50px;
+        margin: 15px 0px;
+        transition: all 400ms ease;
+        margin-right: 30px;
+    
+    }
+    
+    
+    .btn-model1,
+    .btn-model2 {
+        border: none;
+        margin-right: 10px;
+    
+    }
+    
+    .btn-model1:hover {
+        background-color: var(--primary-color);
+        opacity: 0.7
+    }
+    .btn-model2 {
+        background: var(--red);
+       &:hover {
+        background-color: var(--red);
+        opacity: 0.7
+    } 
+    }
+    
+    .btn-model1 {
+        display: block;
+        white-space: nowrap;
+        color: var(--pure-white);
+        font-size: 14px;
+        font-weight: 500;
+        background-color: var(--primary-color);
+        border-radius: 12px;
+        padding: 0 35px;
+        display: inline-block;
+        height: 50px;
+        min-width: 100px;
+        line-height: 50px;
+        margin: 15px 0px;
+        transition: all 400ms ease;
+        
+    }
+    
+    .modal-header .close {
+        margin: -1rem 0 auto;
+    }
+    
+    
+    .btn-model1 , .btn-model2 {
+        border:none;
+        margin-right: 10px;
+    
+    }
+    .btn-model1:hover{
+        background-color: var(--primary-color);
+        opacity:0.7
+    }
+    .btn-model2 {
+        background:var(--red);
+    
+    &:hover{
+        background-color: var(--red);
+        opacity:0.7
+    }
+    
+    }
+    .btn-model1{
+        display: block;
+        white-space: nowrap;
+        color:var(--pure-white);
+        font-size: 14px;
+        font-weight: 500;
+        background-color: var(--primary-color);
+        border-radius: 12px;
+        padding: 0 35px;
+        display: inline-block;
+        height: 50px;
+        min-width: 100px;
+        line-height: 50px;
+        margin: 15px 0px;
+        transition: all 400ms ease;
+    
+    }
+    
+    .modal-header .close {
+        margin: -1rem 0 auto;
+    }
+    
+    .btn-model1 {
+        display: block;
+        white-space: nowrap;
+        color: var(--pure-white);
+        font-size: 14px;
+        font-weight: 500;
+        background-color: var(--primary-color);
+        border-radius: 12px;
+        padding: 0 35px;
+        display: inline-block;
+        height: 50px;
+        min-width: 100px;
+        line-height: 50px;
+        margin: 15px 0px;
+        transition: all 400ms ease;
+        
+    }
+    }
+    

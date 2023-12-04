@@ -151,21 +151,3 @@
 .project-content p strong {
     font-weight: 500;
 }
-.project-box-div {
-    width: 410px;
-    height: 230px;
-    position: relative;
-    margin: 0 auto;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform: translateZ(20px);
-    margin-left: 70px;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 0 transparent;
-}
-
-@media (max-width:768px) {
-    .project-box-div {
-     margin-left: 0 !important; 
-    }
-}

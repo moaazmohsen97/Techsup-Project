@@ -3536,7 +3536,8 @@ h6.service_summary-about::before {
       background-position: top;
       background-size: cover;
       will-change: transform, opacity;
-      border-radius: 12px; }
+      border-radius: 12px;
+      box-shadow: var(--box-shadow); }
   .portfolio-section .project-meta {
     position: absolute;
     font-weight: 700;

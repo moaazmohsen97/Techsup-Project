@@ -3484,7 +3484,7 @@ h6.service_summary-about::before {
   background: var(--pure-white);
   padding: 85px 0 90px; }
   .portfolio-section .col-md-6 {
-    text-align: center; }
+    text-align: -webkit-left; }
     .portfolio-section .col-md-6 h4 {
       font-size: 14px;
       color: var(--th-color);

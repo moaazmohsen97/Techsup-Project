@@ -4,7 +4,7 @@
     padding: 85px 0 90px;
 
     .col-md-6 {
-        text-align: center;
+        text-align:-webkit-left;
         h4 {
             font-size: 14px;
             color: var(--th-color);
@@ -12,7 +12,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             word-spacing: 3px;
-            
+
             &::before {
                 content: "";
                 width: 20px;

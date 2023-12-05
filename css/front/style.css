@@ -2736,6 +2736,9 @@ div#project_list.active {
   margin: -1rem 0 auto; }
 
 /* end header modal */
+.modal-body form .form-group {
+  text-align: justify; }
+
 /* start modal-body */
 .modal-body form .form-group .input-group {
   display: inline-block;

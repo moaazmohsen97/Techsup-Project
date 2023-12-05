@@ -9,7 +9,10 @@ body{
 /* .rtl .rtl .btn-slider{
     margin-left:30px !important;
 } */
-
+ .header__actions {
+        margin-right: auto !important;
+        margin-left: 42px !important;
+    }
 .rtl img.flag-lang {
     margin-left: 3px;
     margin-right: 0;
@@ -57,10 +60,10 @@ body{
 .rtl blockquote.testimonial-slide {
     text-align: right;
 }
-.rtl .blog-section .blog_custom .post-categories {
+/* .rtl .blog-section .blog_custom .post-categories {
     left: auto;
     right: 15px;
-}
+} */
 .rtl .blog-section .blog_custom .post-details {
     text-align: right;
 }
@@ -185,7 +188,6 @@ body{
 
 
     /* @media(max-width:1024px){
-
        .header__btn {
          display:none
         }
@@ -195,13 +197,12 @@ body{
 
 @media(max-width:1200px){
 
-    
     .header__menu {
-   
+
       right:unset;
         left: 0;
         transform: translate3d(-281px, 0, 0);
-      
+
     }
 
     .header__nav {
@@ -210,15 +211,13 @@ body{
     .header__menu--active {
         transform: translate3d(0, 0, 0);
     }
-    .header__actions {
-    /* margin-left: auto; */
-        margin-left: 42px;
-    }
+
+
 
     .header__btn span {
         right:unset;
         left: 0;
-    
+
     }
 
    .header__btn {
@@ -233,21 +232,5 @@ body{
 
     a.btn.btn-slider {
         margin-right: 30px !important;
-    }
-}
-
-
-
-
-.delete-item {
-    right: unset;
-    left: 10px;
-}
-
-
-
-@media only screen and (max-width: 767px) {
-    .header__lang-btn{
-        padding-left: 45px;
     }
 }

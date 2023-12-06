@@ -1496,7 +1496,21 @@ a.popup-vimeo-video:hover {
 
   .rtl .header__search > button {
     right: inherit;
-    left: 60px; } }
+    left: 60px; }
+
+  .wrppar-img {
+    display: none; }
+
+  .advantages .wrppar-img {
+    display: none; }
+
+  .portfolio-section {
+    padding: 0 !important;
+    overflow: hidden;
+    text-align: center; }
+
+  .portfolio-section .modal .col-md-6 {
+    margin-top: 0 !important; } }
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -4561,12 +4575,7 @@ h6.service_summary-about::before {
   padding: 120px 120px 160px;
   position: relative;
   z-index: 2;
-  border-top-left-radius: 12px;
   background-image: linear-gradient(145deg, #25a0d7 60%, var(--pure-white) 100%); }
-
-.rtl .footer-section .footer-right {
-  border-top-left-radius: 0;
-  border-top-right-radius: 12px; }
 
 .footer-section .inner {
   z-index: 5;
@@ -4618,7 +4627,6 @@ h6.service_summary-about::before {
   background-size: cover;
   background-position: center center;
   padding-left: 120px;
-  border-right: 12px;
   position: relative;
   z-index: 1;
   background-color: var(--oof-white); }

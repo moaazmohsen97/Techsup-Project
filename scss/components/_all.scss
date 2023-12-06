@@ -949,5 +949,22 @@ a.popup-vimeo-video:hover {
         right: inherit;
         left: 60px;
     }
+
+        .wrppar-img{
+          display:none
+        }
+        .advantages .wrppar-img {
+          display:none
+        }
+        .portfolio-section{
+          padding:0 !important;
+          overflow: hidden;
+          text-align: center;
+        }
+        .portfolio-section .modal .col-md-6 {
+          margin-top: 0 !important;
+      
+      }
+      
 }
 

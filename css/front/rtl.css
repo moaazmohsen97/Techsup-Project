@@ -82,9 +82,6 @@ body {
 .rtl span.post-date {
   display: none !important; }
 
-.rtl .footer-section .footer-wrapper .col-lg-6 {
-  text-align: right; }
-
 .rtl .service-box-parent {
   text-align: right; }
 

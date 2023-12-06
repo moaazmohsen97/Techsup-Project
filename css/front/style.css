@@ -3426,7 +3426,7 @@ h6.service_summary-about::before {
         color: var(--black);
         font-weight: 500; }
     .portfolio-section .col-md-6 .project-box-div {
-      width: 410px;
+      width: 380px;
       height: 230px;
       position: relative;
       margin: 0 auto;
@@ -3447,7 +3447,7 @@ h6.service_summary-about::before {
   .portfolio-section .project-image-container {
     border-radius: 12px; }
     .portfolio-section .project-image-container .project-image {
-      width: 410px;
+      width: 100%;
       height: 230px;
       background-repeat: no-repeat;
       background-position: top;

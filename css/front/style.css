@@ -1402,7 +1402,11 @@ a.popup-vimeo-video:hover {
 
   .img-e {
     width: 100%;
-    margin: auto; }
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
   button.js-cookie-consent-agree.cookie-consent__agree {
     margin: 10px; }
@@ -4554,15 +4558,15 @@ h6.service_summary-about::before {
   position: relative; }
 
 .footer-section .footer-left {
-  padding: 120px 120px 230px;
+  padding: 120px 120px 100px;
   position: relative;
   z-index: 2;
   border-top-right-radius: 12px;
   background-image: linear-gradient(145deg, #25a0d7 60%, var(--pure-white) 100%); }
 
-.rtl .footer-section .footer-left {
-  border-top-right-radius: 0;
-  border-top-left-radius: 12px; }
+.rtl .footer-section .footer-right {
+  border-top-left-radius: 0;
+  border-top-right-radius: 12px; }
 
 .footer-section .inner {
   z-index: 5;

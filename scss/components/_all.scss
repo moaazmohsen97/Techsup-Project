@@ -828,6 +828,10 @@ a.popup-vimeo-video:hover {
     .img-e {
         width: 100%;
         margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     button.js-cookie-consent-agree.cookie-consent__agree {

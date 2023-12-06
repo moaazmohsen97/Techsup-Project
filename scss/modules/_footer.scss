@@ -146,16 +146,16 @@
 }
 
 .footer-section .footer-left {
-    padding: 120px 120px 230px;
+    padding: 120px 120px 100px;
     position: relative;
     z-index: 2;
     border-top-right-radius: 12px;
     background-image: linear-gradient(145deg, #25a0d7 60%, var(--pure-white) 100%);
 }
 
-.rtl .footer-section .footer-left {
-    border-top-right-radius: 0;
-    border-top-left-radius: 12px;
+.rtl .footer-section .footer-right {
+    border-top-left-radius: 0;
+    border-top-right-radius: 12px;
 }
 
 .footer-section .inner {

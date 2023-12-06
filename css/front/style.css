@@ -515,7 +515,7 @@ a.btn.btn-slider:hover {
 .btn-partner {
   font-size: 14px !important;
   padding: 0 25px !important;
-  min-width: 43px !important;
+  min-width: 250px !important;
   letter-spacing: 1px; }
 
 /* .btn-partner:hover {
@@ -784,7 +784,11 @@ button:focus,
     text-align: justify; }
   .advantages .wrppar-img {
     width: 68%;
-    margin: auto; }
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); }
 
 .margin-edit {
   margin: 20px 0 !important; }
@@ -4550,7 +4554,7 @@ h6.service_summary-about::before {
   position: relative; }
 
 .footer-section .footer-left {
-  padding: 120px 120px 100px;
+  padding: 120px 120px 230px;
   position: relative;
   z-index: 2;
   border-top-right-radius: 12px;

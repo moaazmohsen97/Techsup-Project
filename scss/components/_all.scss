@@ -25,11 +25,11 @@
  }
 .wrppar-img{
 width: 68%;
-/* margin: auto; */
-top: 50%;
-left: 65%;
-position: absolute;
-transform: translate(-50%, -50%);
+ margin: auto;
+// top: 50%;
+// left: 65%;
+// position: absolute;
+// transform: translate(-50%, -50%);
 }
 
 }
@@ -328,10 +328,7 @@ fieldset[disabled] .form-control {
     margin: 60px 0;
 
 }
-.rtl .simpleParallax-video {
-    margin-right: 0px;
-    margin-left: 30px;
-}
+
 a.popup-vimeo-video {
     color: var(--black);
     font-size: 74px;
@@ -639,6 +636,9 @@ a.popup-vimeo-video:hover {
 }
 
 @media (max-width:767px) {
+
+
+  
     .fixed-sidebar-menu.open {
         width: 320px;
         padding: 0;
@@ -914,6 +914,15 @@ a.popup-vimeo-video:hover {
         font-size: 18px;
     }
 
+
+
+      .advantages {
+
+        .row:first-child
+        {
+            flex-direction: column-reverse !important;
+        }
+    }
     .rtl .header__logo {
         margin-right: 40px;
     }

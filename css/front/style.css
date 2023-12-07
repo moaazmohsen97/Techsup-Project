@@ -764,7 +764,14 @@ button:focus,
 
 @media (max-width: 768px) {
   .link-btn {
-    text-align: center; } }
+    text-align: center; }
+
+  a.btn-slider,
+  .btn.btn-style1 {
+    font-size: 16px;
+    line-height: 45px;
+    height: 45px;
+    padding: 00 25px; } }
 .rc-anchor-aria-status {
   display: block; }
 
@@ -3700,20 +3707,10 @@ h6.service_summary-about::before {
   .slider-techsup:not(.owl-loaded) {
     height: auto !important; }
 
-  a.btn-slider,
-  .btn.btn-style1 {
-    font-size: 16px;
-    line-height: 45px;
-    height: 45px;
-    padding: 00 25px; }
-
   .slider-techsup-section,
   .breadcrumb-area {
     background-size: contain;
     text-align: center; }
-
-  a.btn.btn-slider {
-    margin-right: 30px !important; }
 
   .slider-body p {
     text-align: justify;

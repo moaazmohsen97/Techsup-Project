@@ -3433,7 +3433,6 @@ h6.service_summary-about::before {
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transform: translateZ(20px);
-      margin-left: 70px;
       box-shadow: 0 0 0 0 transparent;
       -webkit-box-shadow: 0 0 0 0 transparent; }
     .portfolio-section .col-md-6 .project-category {

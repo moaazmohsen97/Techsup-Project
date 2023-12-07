@@ -217,8 +217,5 @@ body {
   .header__btn {
     right: unset !important;
     left: 30px !important; } }
-@media (max-width: 767px) {
-  a.btn.btn-slider {
-    margin-right: 30px !important; } }
 .ar {
   direction: rtl; }

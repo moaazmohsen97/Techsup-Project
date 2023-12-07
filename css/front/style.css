@@ -771,7 +771,10 @@ button:focus,
     font-size: 16px;
     line-height: 45px;
     height: 45px;
-    padding: 00 25px; } }
+    padding: 00 25px; }
+
+  a.btn.btn-slider {
+    margin-right: 0px !important; } }
 .rc-anchor-aria-status {
   display: block; }
 

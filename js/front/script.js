@@ -402,7 +402,48 @@
 		/*==============================
 		   end slider
 		==============================*/
+		$(function () {
+			$('label').magnificPopup({
+				type: 'inline',
+				items: { src: '#modal' },
+				preloader: false,
+				modal: true
+			});
+			$(document).on('click', '.popup-modal-dismiss', function (e) {
+				e.preventDefault();
+				$.magnificPopup.close();
+			});
+		});
 
+		if (jQuery('.gallery').length) {
+			jQuery('.gallery').magnificPopup({
+				delegate: 'a',
+				type: 'image',
+				gallery: {
+					enabled: true
+				},
+				// other options
+			});
+		}
+		if (jQuery('.gallery').length) {
+			jQuery('.gallery').magnificPopup({
+				delegate: 'a',
+				type: 'image',
+				gallery: {
+					enabled: true
+				},
+				// other options
+			});
+		}
+
+		if (jQuery('.popup-vimeo-video').length) {
+			$(".popup-vimeo-video").magnificPopup({
+				type: "iframe",
+				removalDelay: 160,
+				preloader: false,
+				fixedContentPos: false
+			});
+		}
 		/* HOME ABOUT PARALAX */
 		if (jQuery(window).width() > 768) {
 			let img1 = document.getElementsByClassName('thumparallax');

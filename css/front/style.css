@@ -788,6 +788,10 @@ button:focus,
   /* margin:10px 0 ; */
   height: 40px; }
 
+.delete-item {
+  right: unset !important;
+  left: 10px !important; }
+
 .advantages {
   text-align: center; }
   .advantages .partners-pra {

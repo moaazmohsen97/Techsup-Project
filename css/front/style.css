@@ -4523,6 +4523,9 @@ h6.service_summary-about::before {
 .codeless-add-purchase-button i.icon svg path {
   fill: var(--black); }
 
+.footer-widget {
+  text-align: justify; }
+
 .footer-link {
   margin-top: 30px; }
 

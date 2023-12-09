@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
   height: 70px;
   width: 100%;
   position: relative;
@@ -316,7 +316,7 @@ div#project_list.active {
   align-items: flex-start;
   position: fixed;
   top: 70px;
-  right: 0;
+  left: 0;
   bottom: 0;
   background-color: var(--pure-white);
   z-index: 101;
@@ -324,8 +324,12 @@ div#project_list.active {
   padding: 25px 25px 0;
   padding: 0 25px ;
   
-  transform: translate3d(281px, 0, 0);
+  transform: translate3d(-281px, 0, 0);
+
+  // transform: translate3d(281px, 0, 0);
   transition: transform 0.5s ease;
+
+  
   /* border-left: 1px solid #222227; */
   /* box-shadow: 0 7px 8px 0 rgb(0 0 0 / 6%); */
 }
@@ -333,6 +337,7 @@ div#project_list.active {
 .header__menu--active {
   transform: translate3d(0, 0, 0);
 }
+
 
 .header__nav {
   display: flex;
@@ -342,8 +347,9 @@ div#project_list.active {
   width: 100%;
   position: relative;
   margin: 0;
-  padding: 0;
+  padding:50px 0;
   list-style: none;
+  
 }
 
 .header__nav-item {

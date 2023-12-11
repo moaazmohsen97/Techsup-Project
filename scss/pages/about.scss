@@ -90,7 +90,15 @@
     border-radius: 12px;
 }
 
-.simpleParallax {
+
+
+.simpleParallax,.simplePara2 {
+    position: relative;
+    z-index: 3;
+
+}
+
+.simplePara2 {
     position: relative;
     z-index: 3;
 
@@ -101,6 +109,8 @@
     height: 100%;  
     }
 }
+
+
 
 .about-section p {
     font-weight: 400;

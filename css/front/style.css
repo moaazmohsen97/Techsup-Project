@@ -3216,7 +3216,8 @@ div#project_list.active {
   -webkit-box-shadow: 0 0 10px #000;
   border-radius: 12px; }
 
-.simpleParallax, .simplePara2 {
+.simpleParallax
+, .simplePara2 {
   position: relative;
   z-index: 3; }
 

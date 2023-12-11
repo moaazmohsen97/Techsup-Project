@@ -3216,12 +3216,14 @@ div#project_list.active {
   -webkit-box-shadow: 0 0 10px #000;
   border-radius: 12px; }
 
-.simpleParallax {
+.simpleParallax, .simplePara2 {
   position: relative;
-  z-index: 3;
+  z-index: 3; }
+
+.simplePara2 {
   width: 500px;
   height: 665px; }
-  .simpleParallax img {
+  .simplePara2 img {
     width: 100%;
     height: 100%; }
 

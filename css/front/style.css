@@ -4265,6 +4265,22 @@ a.popup-vimeo-video:hover {
 .step-bar-wrapper {
   text-align: center; }
 
+@media (max-width: 600px) {
+  .services-details {
+    text-align: center; }
+    .services-details .col-md-6 {
+      margin-top: 5px;
+      margin-bottom: 5px; }
+
+  .featured-image {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+  .step-wrapper {
+    flex-direction: column; }
+    .step-wrapper li span {
+      height: 2px;
+      margin-bottom: 5px; } }
 .card-edit {
   margin: 2rem 0;
   /* background: #dfdfdf; */

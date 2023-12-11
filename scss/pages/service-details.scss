@@ -131,3 +131,27 @@
     text-align: center;
 }
 
+
+@media (max-width: 600px) {
+
+    .services-details {
+        text-align: center;
+        .col-md-6{  
+        margin-top: 5px ;
+        margin-bottom: 5px ;
+        }
+    }
+
+    .featured-image{
+        margin-top: 10px ;
+        margin-bottom: 10px ;
+    }
+    .step-wrapper{
+        flex-direction: column;
+         li span {
+             height: 2px; 
+            margin-bottom: 5px;
+        }
+    }
+    
+}

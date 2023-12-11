@@ -94,6 +94,12 @@
                 padding: 20px 10px;
                 background: var(--pure-white);
                 /* background: #222227; */
+
+                span{
+                    i{
+                        color: var(--primary-color);
+                    }
+                }
             }
         }
     }

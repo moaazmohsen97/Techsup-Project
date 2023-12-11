@@ -4421,6 +4421,8 @@ a.popup-vimeo-video:hover {
         padding: 20px 10px;
         background: var(--pure-white);
         /* background: #222227; */ }
+        .blog-section .blog-single-post .blog_custom .post-details span i {
+          color: var(--primary-color); }
 
 .blog-section .blog-section-title {
   font-size: 42px;

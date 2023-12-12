@@ -4334,7 +4334,7 @@ a.popup-vimeo-video:hover {
     color: var(--th-color);
     font-weight: 400;
     font-size: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     text-decoration: none; }
     .blog-section .post-category-comment-date span:hover, .blog-section .post-category-comment-date a:hover {
       color: var(--primary-color); }
@@ -4688,3 +4688,5 @@ span.techsup-animate-border::after {
   100% {
     -webkit-transform: translateX(113px);
     transform: translateX(113px); } }
+.gallery .portfolio-image {
+  width: 100% !important; }

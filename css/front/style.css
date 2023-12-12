@@ -624,6 +624,10 @@ a.btn.btn-slider2:hover {
   background: var(--pure-white) !important;
   color: var(--primary-color) !important; }
 
+.about-btn-service a.btn.btn-slider {
+  font-size: 11px;
+  padding: 0 10px; }
+
 a.btn.btn-style2 {
   display: block;
   white-space: nowrap;

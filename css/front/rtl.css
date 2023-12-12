@@ -12,7 +12,7 @@
   --oof-white: #F1EFEF;
   --ovelay: rgba(0, 0, 0, 0.7);
   --primary-color-btn: #02567b;
-  --box-shadow: 0 0 10px rgb(0 0 0 / 20%); }
+  --box-shadow: 0 0 10px rgba(0 ,0 ,0 , 20%); }
 
 body {
   font-family: 'Cairo', sans-serif;

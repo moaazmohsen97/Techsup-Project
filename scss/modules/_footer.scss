@@ -147,6 +147,11 @@
     position: relative;
 }
 
+
+.footer-section .social-share-inner ul li {
+    margin-left: 10px !important;
+}
+
 .footer-section .footer-left {
     padding: 120px 120px 160px;
     position: relative;
@@ -370,5 +375,35 @@ span.techsup-animate-border::after {
     100% {
         -webkit-transform: translateX(113px);
         transform: translateX(113px)
+    }
+}
+@media (max-width:767px) {
+
+ 
+    .footer-section .inner h4 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .footer-section .footer-left {
+        padding: 50px 15px;
+    }
+
+    .footer-section .inner h4 {
+        font-size: 42px;
+        line-height: 50px;
+        margin-top: 30px;
+    }
+
+    .footer-section .footer-right {
+        padding: 50px 30px;
+    }
+
+    .footer-section .copyright-text {
+        position: static;
+        margin-top: 30px;
+    }
+
+    .footer-widget {
+        margin-bottom: 40px;
     }
 }

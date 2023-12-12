@@ -199,41 +199,24 @@ body{
 
 
 @media(max-width:1200px){
-
     .header__menu {
-
       left:unset;
         right: 0;
         transform: translate3d(281px, 0, 0);
-
     }
-
     .header__nav {
-        align-items: end;
+        align-items: start;
     }
     .header__menu--active {
         transform: translate3d(0, 0, 0);
     }
-
-
-
     .header__btn span {
         right:unset;
         left: 0;
-
     }
-
    .header__btn {
     right:unset !important;
     left: 30px !important;
     }
 
 }
-
-
-// @media (max-width:767px) {
-
-//     a.btn.btn-slider {
-//         margin-right: 30px !important;
-//     }
-// }

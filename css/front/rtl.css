@@ -205,7 +205,7 @@ body {
     transform: translate3d(281px, 0, 0); }
 
   .header__nav {
-    align-items: end; }
+    align-items: start; }
 
   .header__menu--active {
     transform: translate3d(0, 0, 0); }

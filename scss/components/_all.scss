@@ -19,23 +19,7 @@
     left: 10px !important;
 }
 
-.advantages
-{
- text-align:center;
 
- .partners-pra{
-    text-align:justify
- }
-.wrppar-img{
-width: 68%;
-//  margin: auto;
-// top: 50%;
-// left:50%;
-// position: absolute;
-// transform: translate(-50%, -50%);
-}
-
-}
 .margin-edit {
     margin: 20px 0 !important;
 }
@@ -1181,6 +1165,24 @@ a.popup-vimeo-video:hover {
     margin-left: 10px;
 }
 
+// .plan-ribbon {
+//     background: #895bef;
+//     box-shadow: none;
+//     text-shadow: none;
+//     color: var(--black);
+//     font-weight: 700;
+//     line-height: 1.4;
+//     text-transform: uppercase;
+//     position: absolute;
+//     top: 17px;
+//     left: auto;
+//     right: -55px;
+//     width: 55%;
+//     transform: rotate(36deg);
+//     padding: 7px 0;
+//     font-size: 13px;
+// }
+
 // .portfolio-section .project-image-container-inner:before {
 //     content: "";
 //     left: 0;
@@ -1206,4 +1208,104 @@ a.popup-vimeo-video:hover {
 //     .project-box-div {
 //         margin-left: 0 !important;
 //     }
+// }
+
+
+
+
+// h6.service_summary-about {
+//     font-size: 14px;
+//     color: var(--th-color);
+//     font-weight: 400;
+//     text-transform: uppercase;
+//     letter-spacing: 1px;
+//     word-spacing: 0px;
+//     margin-left: -27px;
+
+
+//     &::before {
+//     content: '';
+//     width: 20px;
+//     height: 1px;
+//     background: #696970;
+//     display: inline-block;
+//     position: relative;
+//     bottom: 5px;
+//     margin-right: 10px;
+// }
+// }
+
+
+
+// // TECHSUP VERTICALS
+.card.featured.to-top-left {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 35px;
+    border-radius: 12px;
+    transition-timing-function: cubic-bezier(.25, .25, .75, .75);
+    transition-duration: 0.4s;
+    transition-property: opacity, transform;
+    padding: 40px 20px 20px;
+    /* border: 1px solid var(--border-color); */
+    background-color: var(--pure-white);
+    // box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    // -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    transition: all 600ms ease;
+    -webkit-transition: all 600ms ease;
+
+h4.heading {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 500;
+    margin-bottom: 0px;
+    i {
+    color: var(--primary-color);
+    padding-right: 5px;
+}
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--th-color);
+    margin-bottom: 10px;
+}
+    &::hover {
+    border-color: rgba(97, 100 ,255 ,70%);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+}
+}
+.heading-wrapper {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.image-wrapper.to-bottom {
+    margin: 15px 0;
+    height: 200px;
+
+img {
+    margin: auto;
+}
+}
+
+.gallery img {
+    display: block;
+    width: 55% !important;
+    margin: auto;
+    height: 165px;
+    border-radius: 10px;
+}
+
+// .rtl h6.service_summary-about::before {
+//     margin-right: 0px;
+//     margin-left: 10px;
+// }
+// .rtl .card.featured.to-top-left h4.heading i {
+//     padding-right: 0px;
+//     padding-left: 5px;
 // }

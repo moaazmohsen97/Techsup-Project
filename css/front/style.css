@@ -11,7 +11,7 @@
   --oof-white: #F1EFEF;
   --ovelay: rgba(0, 0, 0, 0.7);
   --primary-color-btn: #02567b;
-  --box-shadow: 0 0 10px rgba(0 ,0 ,0 , 20%); }
+  --box-shadow: 0 0 10px #e4e0e0; }
 
 /* /////////////////////btns///////////////////////////////////// */
 a.btn.btn-slider {
@@ -3976,7 +3976,7 @@ a.popup-vimeo-video:hover {
     overflow: hidden;
     text-align: center;
     position: relative;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px #e4e0e0;
     height: 520px; }
     .pricing-elements .venor-price-box h3 {
       padding: 20px 10px; }

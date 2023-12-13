@@ -3965,6 +3965,7 @@ a.popup-vimeo-video:hover {
   z-index: 3;
   height: 350px; }
   .simpleParaOne img {
+    object-fit: none;
     width: 100%;
     height: 100%; }
 
@@ -4175,7 +4176,12 @@ a.popup-vimeo-video:hover {
     flex-direction: column; }
     .step-wrapper li span {
       height: 2px;
-      margin-bottom: 5px; } }
+      margin-bottom: 5px; }
+
+  .simpleParaOne img {
+    object-fit: unset;
+    width: 100%;
+    height: 100%; } }
 .card-edit {
   margin: 2rem 0;
   /* background: #dfdfdf; */

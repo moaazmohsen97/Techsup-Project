@@ -3485,12 +3485,14 @@ a.popup-vimeo-video:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 105%; }
+  height: 10%; }
   .e-calculators form h3 {
     color: var(--th-color);
     font-size: 16px;
     text-align: center;
     margin-bottom: 17px; }
+  .e-calculators form #telexork-result {
+    height: 20px; }
   .e-calculators form .overlayForm {
     content: "";
     position: absolute;

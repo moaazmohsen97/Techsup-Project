@@ -17,12 +17,15 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 105%;
+    height: 10%;
     h3 {
         color: var(--th-color);
         font-size: 16px;
         text-align: center;
         margin-bottom: 17px;
+    }
+    #telexork-result{
+        height: 20px;
     }
 
     .overlayForm {

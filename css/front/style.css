@@ -3491,7 +3491,7 @@ a.popup-vimeo-video:hover {
     font-size: 16px;
     text-align: center;
     margin-bottom: 17px; }
-  .e-calculators form #telexork-result {
+  .e-calculators form .tep-result {
     height: 20px; }
   .e-calculators form .overlayForm {
     content: "";

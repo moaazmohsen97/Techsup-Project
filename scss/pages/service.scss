@@ -197,10 +197,13 @@ a.popup-vimeo-video:hover {
 }
 
 .services-details .featured-image{
-    background: #f7f7f7;
+ background: #f7f7f7;
 border-radius: 15px;
 text-align: center;
 height: 125px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 

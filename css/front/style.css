@@ -3186,7 +3186,8 @@ div#project_list.active {
         justify-content: center;
         border-radius: 12px;
         position: relative;
-        z-index: 3; }
+        z-index: 3;
+        overflow: hidden; }
       .about-section .pictures-row .item-about .imgone.big-paral::before {
         position: absolute;
         z-index: 1;

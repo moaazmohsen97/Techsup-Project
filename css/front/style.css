@@ -3960,6 +3960,7 @@ a.popup-vimeo-video:hover {
 .simpleParaOne {
   position: relative;
   z-index: 3;
+  object-fit: none;
   height: 350px; }
   .simpleParaOne img {
     width: 100%;

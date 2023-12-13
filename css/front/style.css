@@ -4688,7 +4688,8 @@ span.techsup-animate-border::after {
 
   .footer-section .copyright-text {
     position: static;
-    margin-top: 30px; }
+    margin-top: 30px;
+    text-align: center; }
 
   .footer-widget {
     margin-bottom: 40px; } }

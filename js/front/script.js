@@ -457,9 +457,7 @@
 
 		
 		// portfolio
-
-
-			
+		
 		$('body:not(.rtl) .blog-boxes-slider').owlCarousel({
 			autoplay: true,
 			loop: true,
@@ -492,7 +490,7 @@
 			autoplay: true,
 			smartSpeed: 500,
 			autoplayTimeout: 6000,
-			margin: 30,
+			margin: 10,
 			nav: false,
 			arrows: false,
 			dots: true,
@@ -509,57 +507,6 @@
 				}
 			}
 		});
-
-		
-		// $('body:not(.rtl) .blog-boxes-slider').owlCarousel({
-		// 	autoplay: true,
-		// 	loop: true,
-		// 	rewind: true,
-		// 	smartSpeed: 500,
-		// 	autoplayTimeout: 6000,
-		// 	margin: 10,
-		// 	nav: false,
-		// 	arrows: false,
-		// 	autoplay: true,
-		// 	autoplayTimeout: 4000,
-		// 	dots: true,
-		// 	responsiveClass: true,
-		// 	responsive: {
-		// 		0: {
-		// 			items: 1
-		// 		},
-		// 		600: {
-		// 			items: 1
-		// 		},
-		// 		1000: {
-		// 			items: 3
-		// 		}
-		// 	}
-		// });
-
-		// $('.rtl .blog-boxes-slider').owlCarousel({
-		// 	rtl: true,
-		// 	loop: true,
-		// 	autoplay: true,
-		// 	smartSpeed: 500,
-		// 	autoplayTimeout: 6000,
-		// 	margin: 10,
-		// 	nav: false,
-		// 	arrows: false,
-		// 	dots: true,
-		// 	responsiveClass: true,
-		// 	responsive: {
-		// 		0: {
-		// 			items: 1
-		// 		},
-		// 		600: {
-		// 			items: 1
-		// 		},
-		// 		1000: {
-		// 			items: 3
-		// 		}
-		// 	}
-		// });
 
 
 		/*==============================
